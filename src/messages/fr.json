@@ -1,0 +1,126 @@
+{
+  "Meta": {
+    "title": "Igee-elektronik | Portail electronique",
+    "description": "Vitrine electronique avec services PCB, prototypage, maintenance, actualites techniques et contact."
+  },
+  "Theme": {
+    "light": "Mode clair",
+    "dark": "Mode sombre",
+    "switch": "Changer le theme"
+  },
+  "TopBar": {
+    "home": "Accueil",
+    "causes": "Services",
+    "events": "Atelier",
+    "blog": "Blog technique",
+    "contact": "Contact",
+    "language": "Langue",
+    "menu": "Menu",
+    "close": "Fermer"
+  },
+  "Header": {
+    "orgName": "Igee-elektronik",
+    "orgType": "ELECTRONICS LAB AND PROTOTYPING",
+    "emailLabel": "Email",
+    "email": "contact@igee-elektronick.com",
+    "callLabel": "Telephone",
+    "phone": "+49 703 123 4567",
+    "donateNow": "Demarrer un projet"
+  },
+  "Help": {
+    "title": "Comment je peux vous aider en electronique ?",
+    "subtitle": "J accompagne les entreprises et particuliers dans la conception, le prototypage et la maintenance de solutions electroniques fiables.",
+    "card1Title": "Conception de PCB",
+    "card1Description": "Schema, routage multicouche et optimisation pour la fabrication industrielle.",
+    "card2Title": "Prototypage embarque",
+    "card2Description": "Integration microcontroleur, capteurs et firmware pour valider rapidement vos idees.",
+    "card3Title": "Maintenance industrielle",
+    "card3Description": "Diagnostic, reparation et remise a niveau de cartes electroniques en production."
+  },
+  "Causes": {
+    "title": "Services electroniques principaux",
+    "subtitle": "Des offres techniques claires pour accelerer vos projets de R&D et vos produits connectes.",
+    "card1Title": "Design PCB haute performance pour IoT et automatisation",
+    "card1Raised": "$450",
+    "card1Goal": "10 jours",
+    "card2Title": "Prototype fonctionnel avec tests banc et validation firmware",
+    "card2Raised": "$780",
+    "card2Goal": "14 jours",
+    "card3Title": "Retrofit de systemes electroniques et extension de duree de vie",
+    "card3Raised": "$620",
+    "card3Goal": "12 jours",
+    "viewAll": "Voir tous les services"
+  },
+  "News": {
+    "title": "Actualites electroniques recentes",
+    "subtitle": "Suivez les evolutions en electronique embarquee, instrumentation et innovation materielle.",
+    "date": "10 Mai 2025",
+    "card1Title": "Optimiser une carte capteurs pour un environnement industriel",
+    "card1Description": "Selection des composants, filtrage EMI et reduction de bruit pour une mesure stable.",
+    "card2Title": "Du prototype au produit: valider un firmware en conditions reelles",
+    "card2Description": "Methode de test, journalisation des erreurs et iteration rapide du code embarque.",
+    "card3Title": "Choisir l alimentation ideale pour un systeme electronique critique",
+    "card3Description": "Comparatif des architectures d alimentation et bonnes pratiques de protection.",
+    "viewAll": "Voir toutes les actualites"
+  },
+  "Urgent": {
+    "title": "Prototype medical en phase critique, support immediat requis.",
+    "description": "Un module de surveillance electronique doit etre finalise rapidement pour les essais cliniques. Contribution technique et materielle bienvenue.",
+    "button": "Voir le projet urgent"
+  },
+  "Newsletter": {
+    "tag": "Newsletter",
+    "title": "Reste informee sur les nouveaux projets electroniques",
+    "description": "Recois des mises a jour sur les nouveaux prototypes, les cas clients et les publications techniques du laboratoire.",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "Votre adresse email",
+    "button": "S abonner"
+  },
+  "LatestNews": {
+    "title": "Dernieres nouvelles du labo",
+    "viewAll": "Tout voir",
+    "item1Title": "Nouveau banc de test pour cartes STM32 et ESP32",
+    "item1Meta": "Equipe IGEE - 1 Mai 2025",
+    "item2Title": "Comment reduire la consommation d un noeud IoT autonome",
+    "item2Meta": "Equipe IGEE - 1 Mai 2025",
+    "item3Title": "Etude de fiabilite sur les connecteurs en milieu humide",
+    "item3Meta": "Equipe IGEE - 1 Mai 2025"
+  },
+  "Testimonials": {
+    "title": "Ce que disent nos partenaires techniques",
+    "subtitle": "Des retours concrets de clients ayant confie des projets electroniques strategiques a Igee-elektronik.",
+    "card1Name": "Sharan Shah",
+    "card1Role": "Responsable production",
+    "card1Quote": "Le redesign de nos cartes de commande a reduit les pannes de 38 pourcent. L execution a ete rapide et tres professionnelle.",
+    "card2Name": "Michelle Anderson",
+    "card2Role": "Directrice R&D",
+    "card2Quote": "Le prototype embarque livre par IGEE a valide notre produit en quelques semaines. Excellente maitrise materielle et logicielle."
+  },
+  "Volunteer": {
+    "title": "Lance ton projet electronique",
+    "description": "Passe de l idee au prototype avec un accompagnement complet: architecture, PCB, firmware et tests terrain.",
+    "button": "Demander un devis"
+  },
+  "Footer": {
+    "about": "Igee-elektronik developpe des solutions electroniques robustes pour IoT, energie, medical et automation.",
+    "officeTitle": "Bureau technique IGEE",
+    "address": "Friedrichstrasse 123, 10117 Berlin, Allemagne",
+    "causesTitle": "Domaines",
+    "cause1": "Conception PCB",
+    "cause2": "Electronique de puissance",
+    "cause3": "Systemes embarques",
+    "cause4": "Instrumentation",
+    "cause5": "Maintenance industrielle",
+    "linksTitle": "Liens rapides",
+    "link1": "Services",
+    "link2": "Projets",
+    "link3": "Blog technique",
+    "link4": "Contact",
+    "link5": "Support",
+    "copyright": "(c) Tous droits reserves par Igee-elektronik."
+  },
+  "Common": {
+    "raised": "Prix de depart",
+    "goal": "Delai moyen"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "Meta": {
+    "title": "Igee-elektronik | Elektronik Portal",
+    "description": "Elektronik-Webseite mit PCB Services, Embedded Prototyping, Wartung, Technik-News und direktem Kontakt."
+  },
+  "Theme": {
+    "light": "Heller Modus",
+    "dark": "Dunkler Modus",
+    "switch": "Thema wechseln"
+  },
+  "TopBar": {
+    "home": "Start",
+    "causes": "Services",
+    "events": "Werkstatt",
+    "blog": "Technik Blog",
+    "contact": "Kontakt",
+    "language": "Sprache",
+    "menu": "Menue",
+    "close": "Schliessen"
+  },
+  "Header": {
+    "orgName": "Igee-elektronik",
+    "orgType": "ELECTRONICS LAB AND PROTOTYPING",
+    "emailLabel": "E-Mail",
+    "email": "contact@igee-elektronick.com",
+    "callLabel": "Telefon",
+    "phone": "+49 703 123 4567",
+    "donateNow": "Projekt starten"
+  },
+  "Help": {
+    "title": "Wie kann ich dein Elektronikprojekt unterstuetzen?",
+    "subtitle": "Ich begleite Unternehmen und Teams bei Schaltungsdesign, Embedded Prototyping und zuverlaessiger Elektronik-Wartung.",
+    "card1Title": "PCB Design",
+    "card1Description": "Schaltplan, Multilayer-Routing und DFM Optimierung fuer die industrielle Fertigung.",
+    "card2Title": "Embedded Prototyping",
+    "card2Description": "Integration von Mikrocontrollern, Sensoren und Firmware zur schnellen Validierung.",
+    "card3Title": "Industrie Wartung",
+    "card3Description": "Diagnose, Reparatur und Upgrade von Elektronikplatinen in Produktionssystemen."
+  },
+  "Causes": {
+    "title": "Kernleistungen in der Elektronik",
+    "subtitle": "Klare technische Pakete, um deine Entwicklung und Markteinfuehrung zu beschleunigen.",
+    "card1Title": "High Performance PCB Design fuer IoT und Automation",
+    "card1Raised": "$450",
+    "card1Goal": "10 Tage",
+    "card2Title": "Funktionsprototyp mit Labortests und Firmware Validierung",
+    "card2Raised": "$780",
+    "card2Goal": "14 Tage",
+    "card3Title": "Retrofit elektronischer Systeme und Lebensdauerverlaengerung",
+    "card3Raised": "$620",
+    "card3Goal": "12 Tage",
+    "viewAll": "Alle Services ansehen"
+  },
+  "News": {
+    "title": "Aktuelle Elektronik Einblicke",
+    "subtitle": "Bleibe auf dem Laufenden zu Embedded Elektronik, Messtechnik und Hardware Innovation.",
+    "date": "10 Mai 2025",
+    "card1Title": "Sensorplatinen fuer industrielle Umgebungen optimieren",
+    "card1Description": "Bauteilauswahl, EMI Filterung und Rauschreduktion fuer stabile Messdaten.",
+    "card2Title": "Vom Prototyp zum Produkt: Firmware Tests im Feld",
+    "card2Description": "Teststrategie, Fehlerprotokolle und schnelle Iterationen in Embedded Software.",
+    "card3Title": "Die passende Stromversorgung fuer kritische Elektronik waehlen",
+    "card3Description": "Vergleich von Topologien und Best Practices fuer Schutz und Stabilitaet.",
+    "viewAll": "Alle News ansehen"
+  },
+  "Urgent": {
+    "title": "Medizinischer Prototyp in kritischer Phase, sofortige Hilfe noetig.",
+    "description": "Ein Ueberwachungsmodul muss kurzfristig fuer klinische Tests abgeschlossen werden. Technische und materielle Unterstuetzung ist willkommen.",
+    "button": "Dringendes Projekt ansehen"
+  },
+  "Newsletter": {
+    "tag": "Newsletter",
+    "title": "Bleibe bei neuen Elektronikprojekten informiert",
+    "description": "Erhalte Updates zu neuen Prototypen, Kundenfaellen und technischen Notizen aus dem Labor.",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "Deine Email Adresse",
+    "button": "Abonnieren"
+  },
+  "LatestNews": {
+    "title": "Neueste Labor Updates",
+    "viewAll": "Alle anzeigen",
+    "item1Title": "Neuer Validierungsstand fuer STM32 und ESP32 in Betrieb",
+    "item1Meta": "IGEE Team - 1 Mai 2025",
+    "item2Title": "Energieverbrauch autonomer IoT Knoten deutlich reduziert",
+    "item2Meta": "IGEE Team - 1 Mai 2025",
+    "item3Title": "Zuverlaessigkeitsstudie fuer Stecker in feuchter Umgebung",
+    "item3Meta": "IGEE Team - 1 Mai 2025"
+  },
+  "Testimonials": {
+    "title": "Stimmen unserer technischen Partner",
+    "subtitle": "Praxisfeedback von Kunden, die strategische Elektronikprojekte mit Igee-elektronik umgesetzt haben.",
+    "card1Name": "Sharan Shah",
+    "card1Role": "Produktionsleiter",
+    "card1Quote": "Das Redesign unserer Steuerplatinen hat die Ausfallrate um 38 Prozent gesenkt. Die Umsetzung war schnell und hoch professionell.",
+    "card2Name": "Michelle Anderson",
+    "card2Role": "R&D Direktorin",
+    "card2Quote": "Der Embedded Prototyp von IGEE hat unser Produkt in wenigen Wochen validiert. Sehr starke Hardware und Firmware Kompetenz."
+  },
+  "Volunteer": {
+    "title": "Starte dein Elektronikprojekt",
+    "description": "Von der Idee bis zum Prototyp mit kompletter Begleitung: Architektur, PCB, Firmware und Feldtests.",
+    "button": "Angebot anfragen"
+  },
+  "Footer": {
+    "about": "Igee-elektronik entwickelt robuste Elektronikloesungen fuer IoT, Energie, Medizintechnik und Automation.",
+    "officeTitle": "IGEE Technikbuero",
+    "address": "Friedrichstrasse 123, 10117 Berlin, Deutschland",
+    "causesTitle": "Fachbereiche",
+    "cause1": "PCB Design",
+    "cause2": "Leistungselektronik",
+    "cause3": "Embedded Systeme",
+    "cause4": "Messtechnik",
+    "cause5": "Industrie Wartung",
+    "linksTitle": "Schnellzugriff",
+    "link1": "Services",
+    "link2": "Projekte",
+    "link3": "Technik Blog",
+    "link4": "Kontakt",
+    "link5": "Support",
+    "copyright": "(c) Alle Rechte vorbehalten von Igee-elektronik."
+  },
+  "Common": {
+    "raised": "Startpreis",
+    "goal": "Durchschnittliche Dauer"
+  }
+}
