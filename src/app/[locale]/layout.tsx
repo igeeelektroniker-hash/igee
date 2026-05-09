@@ -49,7 +49,7 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className="min-h-screen bg-[var(--page-bg)] text-[var(--foreground)]">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
             <SiteNav />
             <div className="pt-[148px]">
               {children}
