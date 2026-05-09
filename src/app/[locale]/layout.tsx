@@ -3,6 +3,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/theme-provider";
+import SiteNav from "@/components/site-nav";
+import SiteFooter from "@/components/site-footer";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -45,10 +47,14 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className="min-h-screen">
+      <body className="min-h-screen bg-[var(--page-bg)] text-[var(--foreground)]">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
+            <SiteNav />
+            <div className="pt-[148px]">
+              {children}
+            </div>
+            <SiteFooter />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

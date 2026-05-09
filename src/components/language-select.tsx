@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo } from "react";
-import Select, { SingleValue, StylesConfig } from "react-select";
+import Select, { SingleValue, StylesConfig, components, SingleValueProps, OptionProps } from "react-select";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 
@@ -10,15 +10,17 @@ type Locale = "de" | "en" | "fr";
 type Option = {
   value: Locale;
   label: string;
+  flag: string;
+  short: string;
 };
 
 const STORAGE_KEY = "igee_locale";
 const COOKIE_NAME = "IGEE_LOCALE";
 
 const options: Option[] = [
-  { value: "de", label: "Deutsch" },
-  { value: "en", label: "English" },
-  { value: "fr", label: "Francais" }
+  { value: "de", label: "Deutsch", flag: "🇩🇪", short: "DE" },
+  { value: "en", label: "English", flag: "🇬🇧", short: "EN" },
+  { value: "fr", label: "Français", flag: "🇫🇷", short: "FR" }
 ];
 
 const styles: StylesConfig<Option, false> = {
@@ -35,7 +37,7 @@ const styles: StylesConfig<Option, false> = {
   }),
   valueContainer: (base) => ({
     ...base,
-    padding: "0 8px"
+    padding: "0 6px"
   }),
   input: (base) => ({
     ...base,
@@ -61,7 +63,8 @@ const styles: StylesConfig<Option, false> = {
     overflow: "hidden",
     marginTop: 6,
     backgroundColor: "var(--surface)",
-    border: "1px solid var(--color-border)"
+    border: "1px solid var(--color-border)",
+    minWidth: 140
   }),
   option: (base, state) => ({
     ...base,
@@ -76,6 +79,26 @@ const styles: StylesConfig<Option, false> = {
         : "var(--surface)"
   })
 };
+
+/* Rendu personnalisé pour la valeur sélectionnée (drapeau + code) */
+const SingleValueComponent = (props: SingleValueProps<Option>) => (
+  <components.SingleValue {...props}>
+    <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
+      <span style={{ fontSize: 18, lineHeight: 1 }}>{props.data.flag}</span>
+      <span>{props.data.short}</span>
+    </span>
+  </components.SingleValue>
+);
+
+/* Rendu personnalisé pour chaque option dans le menu déroulant */
+const OptionComponent = (props: OptionProps<Option>) => (
+  <components.Option {...props}>
+    <span style={{ display: "flex", alignItems: "center", gap: 10 }}>
+      <span style={{ fontSize: 20, lineHeight: 1 }}>{props.data.flag}</span>
+      <span>{props.data.label}</span>
+    </span>
+  </components.Option>
+);
 
 function persistLocale(locale: Locale) {
   localStorage.setItem(STORAGE_KEY, locale);
@@ -101,16 +124,13 @@ export default function LanguageSelect({ ariaLabel }: LanguageSelectProps) {
   );
 
   const onChange = (option: SingleValue<Option>) => {
-    if (!option || option.value === locale) {
-      return;
-    }
-
+    if (!option || option.value === locale) return;
     persistLocale(option.value);
     router.replace(pathname, { locale: option.value });
   };
 
   return (
-    <div className="w-[108px] sm:w-[128px]" aria-label={ariaLabel}>
+    <div className="w-[90px] sm:w-[100px]" aria-label={ariaLabel}>
       <Select
         instanceId="language-select"
         options={options}
@@ -118,6 +138,10 @@ export default function LanguageSelect({ ariaLabel }: LanguageSelectProps) {
         onChange={onChange}
         isSearchable={false}
         styles={styles}
+        components={{
+          SingleValue: SingleValueComponent,
+          Option: OptionComponent
+        }}
       />
     </div>
   );
