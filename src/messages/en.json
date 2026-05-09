@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "Igee-elektronik | Electronics Portal",
-    "description": "Electronics showcase with PCB services, embedded prototyping, maintenance, technical news, and direct contact."
+    "title": "IGEE-Elektroniker | Energy & Building Technology",
+    "description": "Your reliable partner for modern electrical installations, energy efficiency and intelligent building technology – nationally and internationally."
   },
   "Theme": {
     "light": "Light mode",
@@ -10,117 +10,240 @@
   },
   "TopBar": {
     "home": "Home",
-    "causes": "Services",
-    "events": "Workshop",
-    "blog": "Tech Blog",
+    "services": "Services",
+    "about": "About",
+    "projects": "Projects",
     "contact": "Contact",
     "language": "Language",
     "menu": "Menu",
     "close": "Close"
   },
   "Header": {
-    "orgName": "Igee-elektronik",
-    "orgType": "ELECTRONICS LAB AND PROTOTYPING",
+    "orgName": "IGEE-Elektroniker",
+    "orgType": "ENERGY & BUILDING TECHNOLOGY",
     "emailLabel": "Email",
-    "email": "contact@igee-elektronick.com",
+    "email": "info@igee-elektroniker.com",
     "callLabel": "Phone",
-    "phone": "+49 703 123 4567",
-    "donateNow": "Start a project"
+    "phone": "+49 176 45817025",
+    "contactNow": "Get in touch"
   },
-  "Help": {
-    "title": "How can I help your electronics project?",
-    "subtitle": "I support companies and individuals with circuit design, embedded prototyping, and reliable electronics maintenance.",
-    "card1Title": "PCB design",
-    "card1Description": "Schematic, multilayer routing, and DFM optimization for industrial manufacturing.",
-    "card2Title": "Embedded prototyping",
-    "card2Description": "Microcontroller, sensor, and firmware integration to validate ideas quickly.",
-    "card3Title": "Industrial maintenance",
-    "card3Description": "Diagnostics, repair, and upgrade of electronic boards used in production lines."
+  "Hero": {
+    "title": "IGEE-Elektroniker",
+    "subtitle": "Energy & Building Technology",
+    "description": "Your partner for modern electrical installations, energy efficiency and intelligent building technology",
+    "ctaContact": "Get in touch",
+    "ctaServices": "Our services"
   },
-  "Causes": {
-    "title": "Core electronics services",
-    "subtitle": "Clear technical offers to accelerate your R&D pipeline and connected products.",
-    "card1Title": "High performance PCB design for IoT and automation",
-    "card1Raised": "$450",
-    "card1Goal": "10 days",
-    "card2Title": "Functional prototype with bench tests and firmware validation",
-    "card2Raised": "$780",
-    "card2Goal": "14 days",
-    "card3Title": "Retrofit of electronic systems and lifetime extension",
-    "card3Raised": "$620",
-    "card3Goal": "12 days",
-    "viewAll": "View all services"
+  "Welcome": {
+    "tag": "Welcome",
+    "title": "Welcome to IGEE-Elektroniker",
+    "description1": "IGEE-Elektroniker is your reliable partner – nationally and internationally – for modern electrical installations, energy efficiency and intelligent building technology. We rely on innovative solutions suited for both private households and commercial and industrial use.",
+    "description2": "Our range of services extends from classic electrical installations to advanced smart home systems. You receive all services from a single source – individually tailored and professionally implemented.",
+    "badge": "Quality · Safety · Future Technology",
+    "learnMore": "Learn more about us"
   },
-  "News": {
-    "title": "Recent electronics insights",
-    "subtitle": "Follow updates in embedded electronics, instrumentation, and hardware innovation.",
-    "date": "May 10, 2025",
-    "card1Title": "Optimizing a sensor board for industrial environments",
-    "card1Description": "Component selection, EMI filtering, and noise reduction for stable measurements.",
-    "card2Title": "From prototype to product: firmware validation in real conditions",
-    "card2Description": "Test strategy, fault logging, and fast iteration for embedded software.",
-    "card3Title": "Selecting the right power architecture for critical electronics",
-    "card3Description": "Comparison of power topologies and protection best practices.",
-    "viewAll": "View all news"
+  "Services": {
+    "title": "Our Services",
+    "subtitle": "From new construction to smart home solutions – we offer you the complete spectrum of electrical and building technology.",
+    "viewAll": "View all services",
+    "elecTitle": "Electrical Installation",
+    "elecDesc": "New construction & renovation, distribution boards, outlets, lighting systems",
+    "energyTitle": "Energy & Building Technology",
+    "energyDesc": "Energy-efficient systems, load management, network technology",
+    "smartTitle": "Smart Home",
+    "smartDesc": "KNX / LOXONE, intelligent control of lighting, heating & security",
+    "pvTitle": "Photovoltaics & Energy",
+    "pvDesc": "PV system planning & installation, battery storage",
+    "industryTitle": "Industry",
+    "industryDesc": "Control cabinet construction, commissioning, circuit diagrams",
+    "measureTitle": "Measurement Technology",
+    "measureDesc": "System measurements DIN VDE, equipment and machine measurements",
+    "lightingTitle": "Lighting",
+    "lightingDesc": "Professional indoor and outdoor lighting solutions",
+    "electronicsTitle": "Electronics & Import/Export",
+    "electronicsDesc": "Maintenance, rental, buying and selling of electrical devices & components",
+    "maintenanceTitle": "Maintenance & Service",
+    "maintenanceDesc": "Regular inspections, fault service, system extensions",
+    "securityTitle": "Security System",
+    "securityDesc": "Professional security solutions for buildings and facilities"
   },
-  "Urgent": {
-    "title": "Medical prototype in critical phase, immediate support needed.",
-    "description": "A monitoring electronics module must be finalized quickly for clinical trials. Technical and material support is welcome.",
-    "button": "View urgent project"
+  "ServiceElec": {
+    "title": "Electrical Installation",
+    "subtitle": "Professional electrical installations for new builds and existing properties",
+    "intro": "From planning to execution, we provide professional electrical installations for all requirements.",
+    "item1": "New construction & renovation",
+    "item2": "Distribution boards & meter cabinets",
+    "item3": "Outlets & lighting systems",
+    "item4": "Fault diagnosis & repair",
+    "item5": "Circuit diagrams",
+    "item6": "Meter installation for grid connection"
   },
-  "Newsletter": {
-    "tag": "Newsletter",
-    "title": "Stay updated on new electronics builds",
-    "description": "Get updates about new prototypes, client case studies, and technical notes from the lab.",
+  "ServiceEnergy": {
+    "title": "Energy & Building Technology",
+    "subtitle": "Modern solutions for greater energy efficiency",
+    "intro": "We develop tailor-made energy solutions that reduce your operating costs and increase comfort.",
+    "item1": "Energy-efficient systems",
+    "item2": "Load management",
+    "item3": "Network technology & communications"
+  },
+  "ServiceSmartHome": {
+    "title": "Smart Home",
+    "subtitle": "Intelligent living and working with state-of-the-art technology",
+    "intro": "We integrate powerful smart home systems that offer you maximum comfort and energy savings.",
+    "item1": "Intelligent control of lighting, heating & security",
+    "item2": "KNX / LOXONE modern smart home systems",
+    "item3": "Automation for greater comfort"
+  },
+  "ServicePV": {
+    "title": "Photovoltaics & Energy",
+    "subtitle": "Sustainable energy supply from planning to commissioning",
+    "intro": "Benefit from clean solar energy and sustainably reduce your energy costs.",
+    "item1": "PV system planning & installation",
+    "item2": "Battery storage",
+    "item3": "Optimize self-consumption"
+  },
+  "ServiceIndustry": {
+    "title": "Industry",
+    "subtitle": "Reliable solutions for industrial requirements",
+    "intro": "We support industrial operations with in-depth expertise in control cabinet construction, commissioning and documentation.",
+    "item1": "Control cabinet construction",
+    "item2": "Equipment commissioning",
+    "item3": "Circuit diagrams"
+  },
+  "ServiceMeasure": {
+    "title": "Measurement Technology",
+    "subtitle": "Precise measurements according to current standards",
+    "intro": "We carry out all legally required and recommended measurements according to current DIN VDE standards.",
+    "item1": "System measurements DIN VDE 0100 600 / 0100 105",
+    "item2": "Equipment measurements DIN VDE 0701-0702",
+    "item3": "Machines DIN VDE 0113-1",
+    "item4": "PV system testing DIN VDE 0126-23",
+    "item5": "Medical device testing DIN EN 62353 VDE 0751"
+  },
+  "ServiceElectronics": {
+    "title": "Electronics & Import/Export",
+    "subtitle": "Complete electronics service and international trade",
+    "intro": "From maintenance to international trade, we offer a wide range of electronics services.",
+    "item1": "Maintenance and repair of electrical devices",
+    "item2": "Rental of electrical devices",
+    "item3": "Buying and selling of electrical devices",
+    "item4": "Buying and selling of electronic components",
+    "item5": "Import & Export"
+  },
+  "ServiceMaintenance": {
+    "title": "Maintenance & Service",
+    "subtitle": "Reliable care of your systems",
+    "intro": "Regular maintenance extends the lifespan of your systems and prevents costly failures.",
+    "item1": "Regular inspections",
+    "item2": "Fault service",
+    "item3": "Extensions to existing systems"
+  },
+  "About": {
+    "tag": "About us",
+    "title": "Partnership and Expertise",
+    "description1": "We see ourselves as a collaborative partner for companies operating in Europe, as well as companies wishing to invest in Africa, sell goods or realize projects. With our experience, we accompany your venture and provide advisory support at every step.",
+    "description2": "Our specialist company for energy and building technology is characterized by high competence, reliability and clean execution. We develop and implement individual solutions tailored exactly to your requirements.",
+    "description3": "Our goal is to connect modern technology with efficient energy use. We place great value on high-quality materials, compliance with current standards, and personal, individual consulting. This is how we create sustainable and future-proof solutions for our customers.",
+    "strengthsTitle": "Our Strengths",
+    "s1": "Professional planning & execution",
+    "s2": "Punctuality & reliability",
+    "s3": "Personal consulting",
+    "s4": "Future-proof solutions",
+    "internationalTitle": "Internationally active",
+    "internationalDesc": "Partnerships for projects in Africa also possible.",
+    "internationalDetail": "We accompany companies operating in Europe or wishing to invest in Africa, sell goods or realize projects."
+  },
+  "WhyUs": {
+    "title": "Why us?",
+    "subtitle": "We think not only about today, but about the energy of tomorrow.",
+    "r1": "Individual solutions instead of standard solutions",
+    "r2": "Use of modern technologies",
+    "r3": "High safety standards",
+    "r4": "Fair & transparent prices",
+    "r5": "Professional & reliable",
+    "r6": "Fast appointments"
+  },
+  "Partners": {
+    "title": "Our Partners",
+    "subtitle": "We work with leading manufacturers and technology partners.",
+    "more": "And more"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Reference projects from our work",
+    "p1Title": "Single-family house – complete electrical installation",
+    "p1Desc": "Complete electrical installation of a single-family house with modern security systems.",
+    "p2Title": "Multi-family building – electrical installation",
+    "p2Desc": "Planning and execution of electrical installation in a multi-family building.",
+    "p3Title": "Smart Home retrofitting",
+    "p3Desc": "Modernization of an existing building with KNX smart home system.",
+    "p4Title": "Commercial property – energy optimization",
+    "p4Desc": "Energy efficiency measures and load management for a commercial property.",
+    "viewAll": "View all projects",
+    "category1": "Residential",
+    "category2": "Smart Home",
+    "category3": "Commercial"
+  },
+  "Contact": {
+    "tag": "Contact",
+    "title": "Get in touch",
+    "subtitle": "Use our contact form or call us directly – we will get back to you as soon as possible.",
+    "personName": "Cyrille Nokam",
+    "phone": "+49 176 45817025",
+    "email": "info@igee-elektroniker.com",
+    "address": "Christophstr 46, 73033 Göppingen",
+    "formTitle": "Contact form",
     "namePlaceholder": "Your name",
     "emailPlaceholder": "Your email address",
-    "button": "Subscribe"
+    "phonePlaceholder": "Your phone number (optional)",
+    "messagePlaceholder": "Your message...",
+    "send": "Send message",
+    "orCall": "Call us directly",
+    "orEmail": "Send an email",
+    "responseTime": "We typically respond within 24 hours.",
+    "serviceLabel": "Service of interest",
+    "servicePlaceholder": "– Please select –",
+    "serviceGeneral": "General inquiry",
+    "sElec": "Electrical Installation",
+    "sEnergy": "Energy & Building Technology",
+    "sSmart": "Smart Home",
+    "sPV": "Photovoltaics & Energy",
+    "sIndustry": "Industry",
+    "sMeasure": "Measurement Technology",
+    "sLighting": "Lighting",
+    "sElectronics": "Electronics & Import/Export",
+    "sMaintenance": "Maintenance & Service"
   },
-  "LatestNews": {
-    "title": "Latest lab updates",
-    "viewAll": "View all",
-    "item1Title": "New STM32 and ESP32 validation bench deployed",
-    "item1Meta": "IGEE Team - May 1, 2025",
-    "item2Title": "Lowering power consumption on autonomous IoT nodes",
-    "item2Meta": "IGEE Team - May 1, 2025",
-    "item3Title": "Reliability study for connectors in humid environments",
-    "item3Meta": "IGEE Team - May 1, 2025"
-  },
-  "Testimonials": {
-    "title": "What technical partners say",
-    "subtitle": "Concrete feedback from clients who trusted Igee-elektronik with strategic electronics programs.",
-    "card1Name": "Sharan Shah",
-    "card1Role": "Production Manager",
-    "card1Quote": "The control board redesign reduced our failure rate by 38 percent. Delivery was fast and highly professional.",
-    "card2Name": "Michelle Anderson",
-    "card2Role": "R&D Director",
-    "card2Quote": "The embedded prototype from IGEE validated our product in weeks. Excellent hardware and firmware expertise."
-  },
-  "Volunteer": {
-    "title": "Start your electronics project",
-    "description": "Move from concept to prototype with complete support: architecture, PCB, firmware, and field testing.",
-    "button": "Request quote"
+  "CTA": {
+    "title": "Start your project with IGEE-Elektroniker",
+    "description": "From planning to execution – we accompany you every step of the way. Contact us for a non-binding quote.",
+    "button": "Request a quote"
   },
   "Footer": {
-    "about": "Igee-elektronik develops robust electronics solutions for IoT, energy systems, medical devices, and automation.",
-    "officeTitle": "IGEE Technical Office",
-    "address": "Friedrichstrasse 123, 10117 Berlin, Germany",
-    "causesTitle": "Domains",
-    "cause1": "PCB design",
-    "cause2": "Power electronics",
-    "cause3": "Embedded systems",
-    "cause4": "Instrumentation",
-    "cause5": "Industrial maintenance",
+    "about": "IGEE-Elektroniker is your reliable partner for modern electrical installations, energy efficiency and intelligent building technology – nationally and internationally.",
+    "officeTitle": "Office",
+    "address": "Christophstr 46, 73033 Göppingen",
+    "phone": "+49 176 45817025",
+    "email": "info@igee-elektroniker.com",
+    "servicesTitle": "Services",
+    "s1": "Electrical Installation",
+    "s2": "Smart Home",
+    "s3": "Photovoltaics",
+    "s4": "Measurement Technology",
+    "s5": "Industry",
     "linksTitle": "Quick links",
-    "link1": "Services",
-    "link2": "Projects",
-    "link3": "Tech blog",
-    "link4": "Contact",
-    "link5": "Support",
-    "copyright": "(c) All rights reserved by Igee-elektronik."
+    "link1": "Home",
+    "link2": "Services",
+    "link3": "About",
+    "link4": "Projects",
+    "link5": "Contact",
+    "copyright": "© 2026 IGEE-Elektroniker – All rights reserved"
   },
   "Common": {
-    "raised": "Starting price",
-    "goal": "Average timeline"
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "contactUs": "Get in touch",
+    "backToServices": "Back to services",
+    "requestQuote": "Request a quote"
   }
 }

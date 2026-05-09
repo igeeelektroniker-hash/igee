@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "Igee-elektronik | Elektronik Portal",
-    "description": "Elektronik-Webseite mit PCB Services, Embedded Prototyping, Wartung, Technik-News und direktem Kontakt."
+    "title": "IGEE-Elektroniker | Energie- & Gebäudetechnik",
+    "description": "Ihr zuverlässiger Partner für moderne Elektroinstallationen, Energieeffizienz und intelligente Gebäudetechnik – national und international."
   },
   "Theme": {
     "light": "Heller Modus",
@@ -10,117 +10,240 @@
   },
   "TopBar": {
     "home": "Start",
-    "causes": "Services",
-    "events": "Werkstatt",
-    "blog": "Technik Blog",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "projects": "Projekte",
     "contact": "Kontakt",
     "language": "Sprache",
-    "menu": "Menue",
-    "close": "Schliessen"
+    "menu": "Menü",
+    "close": "Schließen"
   },
   "Header": {
-    "orgName": "Igee-elektronik",
-    "orgType": "ELECTRONICS LAB AND PROTOTYPING",
+    "orgName": "IGEE-Elektroniker",
+    "orgType": "ENERGIE- & GEBÄUDETECHNIK",
     "emailLabel": "E-Mail",
-    "email": "contact@igee-elektronick.com",
+    "email": "info@igee-elektroniker.com",
     "callLabel": "Telefon",
-    "phone": "+49 703 123 4567",
-    "donateNow": "Projekt starten"
+    "phone": "+49 176 45817025",
+    "contactNow": "Kontakt aufnehmen"
   },
-  "Help": {
-    "title": "Wie kann ich dein Elektronikprojekt unterstuetzen?",
-    "subtitle": "Ich begleite Unternehmen und Teams bei Schaltungsdesign, Embedded Prototyping und zuverlaessiger Elektronik-Wartung.",
-    "card1Title": "PCB Design",
-    "card1Description": "Schaltplan, Multilayer-Routing und DFM Optimierung fuer die industrielle Fertigung.",
-    "card2Title": "Embedded Prototyping",
-    "card2Description": "Integration von Mikrocontrollern, Sensoren und Firmware zur schnellen Validierung.",
-    "card3Title": "Industrie Wartung",
-    "card3Description": "Diagnose, Reparatur und Upgrade von Elektronikplatinen in Produktionssystemen."
+  "Hero": {
+    "title": "IGEE-Elektroniker",
+    "subtitle": "Energie- & Gebäudetechnik",
+    "description": "Ihr Partner für moderne Elektroinstallationen, Energieeffizienz und intelligente Gebäudetechnik",
+    "ctaContact": "Kontakt aufnehmen",
+    "ctaServices": "Unsere Leistungen"
   },
-  "Causes": {
-    "title": "Kernleistungen in der Elektronik",
-    "subtitle": "Klare technische Pakete, um deine Entwicklung und Markteinfuehrung zu beschleunigen.",
-    "card1Title": "High Performance PCB Design fuer IoT und Automation",
-    "card1Raised": "$450",
-    "card1Goal": "10 Tage",
-    "card2Title": "Funktionsprototyp mit Labortests und Firmware Validierung",
-    "card2Raised": "$780",
-    "card2Goal": "14 Tage",
-    "card3Title": "Retrofit elektronischer Systeme und Lebensdauerverlaengerung",
-    "card3Raised": "$620",
-    "card3Goal": "12 Tage",
-    "viewAll": "Alle Services ansehen"
+  "Welcome": {
+    "tag": "Willkommen",
+    "title": "Willkommen bei IGEE-Elektroniker",
+    "description1": "IGEE-Elektroniker ist Ihr zuverlässiger Partner – national und international – für moderne Elektroinstallationen, Energieeffizienz und intelligente Gebäudetechnik. Wir setzen auf innovative Lösungen, die sowohl für private Haushalte als auch für Gewerbe und Industrie geeignet sind.",
+    "description2": "Unser Leistungsspektrum reicht von klassischen Elektroinstallationen bis zu fortschrittlichen Smart-Home-Systemen. Dabei erhalten Sie alle Services aus einer Hand – individuell abgestimmt und fachgerecht umgesetzt.",
+    "badge": "Qualität · Sicherheit · Zukunftstechnologie",
+    "learnMore": "Mehr über uns"
   },
-  "News": {
-    "title": "Aktuelle Elektronik Einblicke",
-    "subtitle": "Bleibe auf dem Laufenden zu Embedded Elektronik, Messtechnik und Hardware Innovation.",
-    "date": "10 Mai 2025",
-    "card1Title": "Sensorplatinen fuer industrielle Umgebungen optimieren",
-    "card1Description": "Bauteilauswahl, EMI Filterung und Rauschreduktion fuer stabile Messdaten.",
-    "card2Title": "Vom Prototyp zum Produkt: Firmware Tests im Feld",
-    "card2Description": "Teststrategie, Fehlerprotokolle und schnelle Iterationen in Embedded Software.",
-    "card3Title": "Die passende Stromversorgung fuer kritische Elektronik waehlen",
-    "card3Description": "Vergleich von Topologien und Best Practices fuer Schutz und Stabilitaet.",
-    "viewAll": "Alle News ansehen"
+  "Services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Vom Neubau bis zur Smart-Home-Lösung – wir bieten Ihnen das komplette Spektrum der Elektro- und Gebäudetechnik.",
+    "viewAll": "Alle Leistungen ansehen",
+    "elecTitle": "Elektroinstallation",
+    "elecDesc": "Neubau & Altbausanierung, Verteilungen, Steckdosen, Beleuchtungssysteme",
+    "energyTitle": "Energie- & Gebäudetechnik",
+    "energyDesc": "Energieeffiziente Systeme, Lastmanagement, Netzwerktechnik",
+    "smartTitle": "Smart Home",
+    "smartDesc": "KNX / LOXONE, intelligente Steuerung von Licht, Heizung & Sicherheit",
+    "pvTitle": "Photovoltaik & Energie",
+    "pvDesc": "Planung & Installation von PV-Anlagen, Batteriespeicher",
+    "industryTitle": "Industrie",
+    "industryDesc": "Schaltschrankbau, Inbetriebnahme, Schaltpläne",
+    "measureTitle": "Messtechnik",
+    "measureDesc": "Anlagenmessungen DIN VDE, Geräte- und Maschinenmessungen",
+    "lightingTitle": "Beleuchtung",
+    "lightingDesc": "Professionelle Außen- und Innenbeleuchtungslösungen",
+    "electronicsTitle": "Elektronik & Import/Export",
+    "electronicsDesc": "Wartung, Miete, An- und Verkauf von Elektrogeräten & Bauteilen",
+    "maintenanceTitle": "Wartung & Service",
+    "maintenanceDesc": "Regelmäßige Prüfungen, Störungsdienst, Anlagenerweiterungen",
+    "securityTitle": "Sicherheitssystem",
+    "securityDesc": "Professionelle Sicherheitslösungen für Gebäude und Anlagen"
   },
-  "Urgent": {
-    "title": "Medizinischer Prototyp in kritischer Phase, sofortige Hilfe noetig.",
-    "description": "Ein Ueberwachungsmodul muss kurzfristig fuer klinische Tests abgeschlossen werden. Technische und materielle Unterstuetzung ist willkommen.",
-    "button": "Dringendes Projekt ansehen"
+  "ServiceElec": {
+    "title": "Elektroinstallation",
+    "subtitle": "Professionelle Elektroinstallationen für Neubau und Bestand",
+    "intro": "Von der Planung bis zur Ausführung bieten wir Ihnen fachgerechte Elektroinstallationen für alle Anforderungen.",
+    "item1": "Neubau & Altbausanierung",
+    "item2": "Verteilungen & Zählerschränke",
+    "item3": "Steckdosen & Beleuchtungssysteme",
+    "item4": "Fehlerdiagnose & Reparatur",
+    "item5": "Schaltpläne",
+    "item6": "Montage des Zählers für die Netzversorgung"
   },
-  "Newsletter": {
-    "tag": "Newsletter",
-    "title": "Bleibe bei neuen Elektronikprojekten informiert",
-    "description": "Erhalte Updates zu neuen Prototypen, Kundenfaellen und technischen Notizen aus dem Labor.",
-    "namePlaceholder": "Dein Name",
-    "emailPlaceholder": "Deine Email Adresse",
-    "button": "Abonnieren"
+  "ServiceEnergy": {
+    "title": "Energie- & Gebäudetechnik",
+    "subtitle": "Moderne Lösungen für mehr Energieeffizienz",
+    "intro": "Wir entwickeln maßgeschneiderte Energielösungen, die Ihre Betriebskosten senken und den Komfort steigern.",
+    "item1": "Energieeffiziente Systeme",
+    "item2": "Lastmanagement",
+    "item3": "Netzwerktechnik & Kommunikation"
   },
-  "LatestNews": {
-    "title": "Neueste Labor Updates",
-    "viewAll": "Alle anzeigen",
-    "item1Title": "Neuer Validierungsstand fuer STM32 und ESP32 in Betrieb",
-    "item1Meta": "IGEE Team - 1 Mai 2025",
-    "item2Title": "Energieverbrauch autonomer IoT Knoten deutlich reduziert",
-    "item2Meta": "IGEE Team - 1 Mai 2025",
-    "item3Title": "Zuverlaessigkeitsstudie fuer Stecker in feuchter Umgebung",
-    "item3Meta": "IGEE Team - 1 Mai 2025"
+  "ServiceSmartHome": {
+    "title": "Smart Home",
+    "subtitle": "Intelligentes Wohnen und Arbeiten mit modernster Technik",
+    "intro": "Wir integrieren leistungsstarke Smart-Home-Systeme, die Ihnen maximalen Komfort und Energieeinsparung bieten.",
+    "item1": "Intelligente Steuerung von Licht, Heizung & Sicherheit",
+    "item2": "KNX / LOXONE moderne Smart-Home-Systeme",
+    "item3": "Automatisierung für mehr Komfort"
   },
-  "Testimonials": {
-    "title": "Stimmen unserer technischen Partner",
-    "subtitle": "Praxisfeedback von Kunden, die strategische Elektronikprojekte mit Igee-elektronik umgesetzt haben.",
-    "card1Name": "Sharan Shah",
-    "card1Role": "Produktionsleiter",
-    "card1Quote": "Das Redesign unserer Steuerplatinen hat die Ausfallrate um 38 Prozent gesenkt. Die Umsetzung war schnell und hoch professionell.",
-    "card2Name": "Michelle Anderson",
-    "card2Role": "R&D Direktorin",
-    "card2Quote": "Der Embedded Prototyp von IGEE hat unser Produkt in wenigen Wochen validiert. Sehr starke Hardware und Firmware Kompetenz."
+  "ServicePV": {
+    "title": "Photovoltaik & Energie",
+    "subtitle": "Nachhaltige Energieversorgung von der Planung bis zur Inbetriebnahme",
+    "intro": "Profitieren Sie von sauberer Solarenergie und reduzieren Sie Ihre Energiekosten nachhaltig.",
+    "item1": "Planung & Installation von PV-Anlagen",
+    "item2": "Batteriespeicher",
+    "item3": "Eigenverbrauch optimieren"
   },
-  "Volunteer": {
-    "title": "Starte dein Elektronikprojekt",
-    "description": "Von der Idee bis zum Prototyp mit kompletter Begleitung: Architektur, PCB, Firmware und Feldtests.",
+  "ServiceIndustry": {
+    "title": "Industrie",
+    "subtitle": "Zuverlässige Lösungen für industrielle Anforderungen",
+    "intro": "Wir unterstützen Industriebetriebe mit fundiertem Fachwissen bei Schaltschrankbau, Inbetriebnahme und Dokumentation.",
+    "item1": "Schaltschrankbau",
+    "item2": "Geräte in Betrieb nehmen",
+    "item3": "Schaltpläne"
+  },
+  "ServiceMeasure": {
+    "title": "Messtechnik",
+    "subtitle": "Präzise Messungen nach aktuellen Normen",
+    "intro": "Wir führen alle gesetzlich vorgeschriebenen und empfohlenen Messungen nach aktuellen DIN-VDE-Normen durch.",
+    "item1": "Anlagenmessungen DIN VDE 0100 600 / 0100 105",
+    "item2": "Gerätemessungen DIN VDE 0701-0702",
+    "item3": "Maschinen DIN VDE 0113-1",
+    "item4": "PV-Prüfung Anlagen DIN VDE 0126-23",
+    "item5": "Prüfung medizinischer Geräte nach DIN EN 62353 VDE 0751"
+  },
+  "ServiceElectronics": {
+    "title": "Elektronik & Import/Export",
+    "subtitle": "Kompletter Elektronikservice und internationaler Handel",
+    "intro": "Von der Wartung bis zum internationalen Handel bieten wir ein breites Spektrum an Elektronikdienstleistungen.",
+    "item1": "Wartung und Reparatur für Elektrogeräte",
+    "item2": "Miete für Elektrogeräte",
+    "item3": "An- und Verkauf von Elektrogeräten",
+    "item4": "An- und Verkauf von elektronischen Bauteilen",
+    "item5": "Import & Export"
+  },
+  "ServiceMaintenance": {
+    "title": "Wartung & Service",
+    "subtitle": "Zuverlässige Betreuung Ihrer Anlagen",
+    "intro": "Regelmäßige Wartung verlängert die Lebensdauer Ihrer Anlagen und verhindert kostspielige Ausfälle.",
+    "item1": "Regelmäßige Prüfungen",
+    "item2": "Störungsdienst",
+    "item3": "Erweiterungen bestehender Anlagen"
+  },
+  "About": {
+    "tag": "Über uns",
+    "title": "Partnerschaft und Kompetenz",
+    "description1": "Wir verstehen uns als partnerschaftlicher Ansprechpartner für Unternehmen, die in Europa Aufträge haben, sowie Unternehmen, die in Afrika investieren, Waren verkaufen oder Projekte realisieren möchten. Mit unserer Erfahrung begleiten wir Ihr Vorhaben und stehen Ihnen beratend zur Seite.",
+    "description2": "Unser Fachbetrieb für Energie- und Gebäudetechnik zeichnet sich durch hohe Kompetenz, Zuverlässigkeit und eine saubere Ausführung aus. Wir entwickeln und realisieren individuelle Lösungen, die exakt auf Ihre Anforderungen zugeschnitten sind.",
+    "description3": "Unser Ziel ist die Verbindung moderner Technik mit effizientem Energieeinsatz. Dabei legen wir Wert auf hochwertige Materialien, die Einhaltung aktueller Normen und eine persönliche sowie individuelle Beratung. So schaffen wir nachhaltige und zukunftssichere Lösungen für unsere Kunden.",
+    "strengthsTitle": "Unsere Stärken",
+    "s1": "Fachgerechte Planung & Ausführung",
+    "s2": "Termintreue & Zuverlässigkeit",
+    "s3": "Persönliche Beratung",
+    "s4": "Zukunftssichere Lösungen",
+    "internationalTitle": "International tätig",
+    "internationalDesc": "Auch Partnerschaften für Projekte in Afrika möglich.",
+    "internationalDetail": "Wir begleiten Unternehmen, die in Europa tätig sind oder in Afrika investieren, Waren verkaufen oder Projekte realisieren möchten."
+  },
+  "WhyUs": {
+    "title": "Warum wir?",
+    "subtitle": "Wir denken nicht nur an heute, sondern an die Energie von morgen.",
+    "r1": "Individuelle Lösungen statt Standardlösungen",
+    "r2": "Einsatz moderner Technologien",
+    "r3": "Hohe Sicherheitsstandards",
+    "r4": "Faire & transparente Preise",
+    "r5": "Fachgerecht & zuverlässig",
+    "r6": "Schnelle Termine"
+  },
+  "Partners": {
+    "title": "Unsere Partner",
+    "subtitle": "Wir arbeiten mit führenden Herstellern und Technologiepartnern zusammen.",
+    "more": "Und weitere"
+  },
+  "Projects": {
+    "title": "Projekte",
+    "subtitle": "Referenzprojekte aus unserer Arbeit",
+    "p1Title": "Einfamilienhaus – komplette Elektroinstallation",
+    "p1Desc": "Vollständige Elektroinstallation eines Einfamilienhauses mit modernen Sicherheitssystemen.",
+    "p2Title": "Mehrfamilienhaus – Elektroinstallation",
+    "p2Desc": "Planung und Ausführung der Elektroinstallation in einem Mehrfamilienhaus.",
+    "p3Title": "Smart Home Nachrüstung",
+    "p3Desc": "Modernisierung eines Bestandsgebäudes mit KNX Smart-Home-System.",
+    "p4Title": "Gewerbeobjekt – Energieoptimierung",
+    "p4Desc": "Energieeffizienzmaßnahmen und Lastmanagement für ein Gewerbeobjekt.",
+    "viewAll": "Alle Projekte ansehen",
+    "category1": "Wohnbau",
+    "category2": "Smart Home",
+    "category3": "Gewerbe"
+  },
+  "Contact": {
+    "tag": "Kontakt",
+    "title": "Nehmen Sie Kontakt auf",
+    "subtitle": "Nutzen Sie unser Kontaktformular oder rufen Sie uns direkt an – wir melden uns schnellstmöglich bei Ihnen.",
+    "personName": "Cyrille Nokam",
+    "phone": "+49 176 45817025",
+    "email": "info@igee-elektroniker.com",
+    "address": "Christophstr 46, 73033 Göppingen",
+    "formTitle": "Kontaktformular",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "Ihre E-Mail-Adresse",
+    "phonePlaceholder": "Ihre Telefonnummer (optional)",
+    "messagePlaceholder": "Ihre Nachricht...",
+    "send": "Nachricht senden",
+    "orCall": "Direkt anrufen",
+    "orEmail": "Per E-Mail schreiben",
+    "responseTime": "Wir antworten in der Regel innerhalb von 24 Stunden.",
+    "serviceLabel": "Gewünschte Leistung",
+    "servicePlaceholder": "– Bitte wählen –",
+    "serviceGeneral": "Allgemeine Anfrage",
+    "sElec": "Elektroinstallation",
+    "sEnergy": "Energie- & Gebäudetechnik",
+    "sSmart": "Smart Home",
+    "sPV": "Photovoltaik & Energie",
+    "sIndustry": "Industrie",
+    "sMeasure": "Messtechnik",
+    "sLighting": "Beleuchtung",
+    "sElectronics": "Elektronik & Import/Export",
+    "sMaintenance": "Wartung & Service"
+  },
+  "CTA": {
+    "title": "Starten Sie Ihr Projekt mit IGEE-Elektroniker",
+    "description": "Von der Planung bis zur Umsetzung – wir begleiten Sie bei jedem Schritt. Kontaktieren Sie uns für ein unverbindliches Angebot.",
     "button": "Angebot anfragen"
   },
   "Footer": {
-    "about": "Igee-elektronik entwickelt robuste Elektronikloesungen fuer IoT, Energie, Medizintechnik und Automation.",
-    "officeTitle": "IGEE Technikbuero",
-    "address": "Friedrichstrasse 123, 10117 Berlin, Deutschland",
-    "causesTitle": "Fachbereiche",
-    "cause1": "PCB Design",
-    "cause2": "Leistungselektronik",
-    "cause3": "Embedded Systeme",
-    "cause4": "Messtechnik",
-    "cause5": "Industrie Wartung",
+    "about": "IGEE-Elektroniker ist Ihr zuverlässiger Partner für moderne Elektroinstallationen, Energieeffizienz und intelligente Gebäudetechnik – national und international.",
+    "officeTitle": "Büro",
+    "address": "Christophstr 46, 73033 Göppingen",
+    "phone": "+49 176 45817025",
+    "email": "info@igee-elektroniker.com",
+    "servicesTitle": "Leistungen",
+    "s1": "Elektroinstallation",
+    "s2": "Smart Home",
+    "s3": "Photovoltaik",
+    "s4": "Messtechnik",
+    "s5": "Industrie",
     "linksTitle": "Schnellzugriff",
-    "link1": "Services",
-    "link2": "Projekte",
-    "link3": "Technik Blog",
-    "link4": "Kontakt",
-    "link5": "Support",
-    "copyright": "(c) Alle Rechte vorbehalten von Igee-elektronik."
+    "link1": "Start",
+    "link2": "Leistungen",
+    "link3": "Über uns",
+    "link4": "Projekte",
+    "link5": "Kontakt",
+    "copyright": "© 2026 IGEE-Elektroniker – Alle Rechte vorbehalten"
   },
   "Common": {
-    "raised": "Startpreis",
-    "goal": "Durchschnittliche Dauer"
+    "learnMore": "Mehr erfahren",
+    "viewAll": "Alle ansehen",
+    "contactUs": "Kontakt aufnehmen",
+    "backToServices": "Zurück zu Leistungen",
+    "requestQuote": "Angebot anfragen"
   }
 }

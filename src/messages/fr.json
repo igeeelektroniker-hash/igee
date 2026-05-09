@@ -1,126 +1,249 @@
 {
   "Meta": {
-    "title": "Igee-elektronik | Portail electronique",
-    "description": "Vitrine electronique avec services PCB, prototypage, maintenance, actualites techniques et contact."
+    "title": "IGEE-Elektroniker | Énergie & Technique du bâtiment",
+    "description": "Votre partenaire fiable pour les installations électriques modernes, l'efficacité énergétique et la domotique intelligente – nationalement et internationalement."
   },
   "Theme": {
     "light": "Mode clair",
     "dark": "Mode sombre",
-    "switch": "Changer le theme"
+    "switch": "Changer le thème"
   },
   "TopBar": {
     "home": "Accueil",
-    "causes": "Services",
-    "events": "Atelier",
-    "blog": "Blog technique",
+    "services": "Services",
+    "about": "À propos",
+    "projects": "Projets",
     "contact": "Contact",
     "language": "Langue",
     "menu": "Menu",
     "close": "Fermer"
   },
   "Header": {
-    "orgName": "Igee-elektronik",
-    "orgType": "ELECTRONICS LAB AND PROTOTYPING",
-    "emailLabel": "Email",
-    "email": "contact@igee-elektronick.com",
-    "callLabel": "Telephone",
-    "phone": "+49 703 123 4567",
-    "donateNow": "Demarrer un projet"
+    "orgName": "IGEE-Elektroniker",
+    "orgType": "ÉNERGIE & TECHNIQUE DU BÂTIMENT",
+    "emailLabel": "E-mail",
+    "email": "info@igee-elektroniker.com",
+    "callLabel": "Téléphone",
+    "phone": "+49 176 45817025",
+    "contactNow": "Nous contacter"
   },
-  "Help": {
-    "title": "Comment je peux vous aider en electronique ?",
-    "subtitle": "J accompagne les entreprises et particuliers dans la conception, le prototypage et la maintenance de solutions electroniques fiables.",
-    "card1Title": "Conception de PCB",
-    "card1Description": "Schema, routage multicouche et optimisation pour la fabrication industrielle.",
-    "card2Title": "Prototypage embarque",
-    "card2Description": "Integration microcontroleur, capteurs et firmware pour valider rapidement vos idees.",
-    "card3Title": "Maintenance industrielle",
-    "card3Description": "Diagnostic, reparation et remise a niveau de cartes electroniques en production."
+  "Hero": {
+    "title": "IGEE-Elektroniker",
+    "subtitle": "Énergie & Technique du bâtiment",
+    "description": "Votre partenaire pour les installations électriques modernes, l'efficacité énergétique et la domotique intelligente",
+    "ctaContact": "Nous contacter",
+    "ctaServices": "Nos services"
   },
-  "Causes": {
-    "title": "Services electroniques principaux",
-    "subtitle": "Des offres techniques claires pour accelerer vos projets de R&D et vos produits connectes.",
-    "card1Title": "Design PCB haute performance pour IoT et automatisation",
-    "card1Raised": "$450",
-    "card1Goal": "10 jours",
-    "card2Title": "Prototype fonctionnel avec tests banc et validation firmware",
-    "card2Raised": "$780",
-    "card2Goal": "14 jours",
-    "card3Title": "Retrofit de systemes electroniques et extension de duree de vie",
-    "card3Raised": "$620",
-    "card3Goal": "12 jours",
-    "viewAll": "Voir tous les services"
+  "Welcome": {
+    "tag": "Bienvenue",
+    "title": "Bienvenue chez IGEE-Elektroniker",
+    "description1": "IGEE-Elektroniker est votre partenaire fiable – nationalement et internationalement – pour les installations électriques modernes, l'efficacité énergétique et la domotique intelligente. Nous misons sur des solutions innovantes adaptées aussi bien aux particuliers qu'aux entreprises et industries.",
+    "description2": "Notre gamme de services s'étend des installations électriques classiques aux systèmes de maison intelligente avancés. Vous bénéficiez de tous les services en un seul endroit – adaptés individuellement et réalisés de manière professionnelle.",
+    "badge": "Qualité · Sécurité · Technologie d'avenir",
+    "learnMore": "En savoir plus"
   },
-  "News": {
-    "title": "Actualites electroniques recentes",
-    "subtitle": "Suivez les evolutions en electronique embarquee, instrumentation et innovation materielle.",
-    "date": "10 Mai 2025",
-    "card1Title": "Optimiser une carte capteurs pour un environnement industriel",
-    "card1Description": "Selection des composants, filtrage EMI et reduction de bruit pour une mesure stable.",
-    "card2Title": "Du prototype au produit: valider un firmware en conditions reelles",
-    "card2Description": "Methode de test, journalisation des erreurs et iteration rapide du code embarque.",
-    "card3Title": "Choisir l alimentation ideale pour un systeme electronique critique",
-    "card3Description": "Comparatif des architectures d alimentation et bonnes pratiques de protection.",
-    "viewAll": "Voir toutes les actualites"
+  "Services": {
+    "title": "Nos Services",
+    "subtitle": "De la construction neuve aux solutions domotiques – nous vous offrons le spectre complet de l'électrotechnique et de la technique du bâtiment.",
+    "viewAll": "Voir tous les services",
+    "elecTitle": "Installation électrique",
+    "elecDesc": "Construction neuve & rénovation, tableaux de distribution, prises, systèmes d'éclairage",
+    "energyTitle": "Énergie & Technique du bâtiment",
+    "energyDesc": "Systèmes économes en énergie, gestion de charge, technologie réseau",
+    "smartTitle": "Maison intelligente",
+    "smartDesc": "KNX / LOXONE, contrôle intelligent de l'éclairage, du chauffage & de la sécurité",
+    "pvTitle": "Photovoltaïque & Énergie",
+    "pvDesc": "Planification & installation de systèmes PV, stockage par batterie",
+    "industryTitle": "Industrie",
+    "industryDesc": "Construction d'armoires de commande, mise en service, schémas électriques",
+    "measureTitle": "Métrologie",
+    "measureDesc": "Mesures d'installations DIN VDE, mesures d'équipements et de machines",
+    "lightingTitle": "Éclairage",
+    "lightingDesc": "Solutions professionnelles d'éclairage intérieur et extérieur",
+    "electronicsTitle": "Électronique & Import/Export",
+    "electronicsDesc": "Maintenance, location, achat et vente d'appareils & composants électroniques",
+    "maintenanceTitle": "Maintenance & Service",
+    "maintenanceDesc": "Inspections régulières, service de dépannage, extensions d'installations",
+    "securityTitle": "Système de sécurité",
+    "securityDesc": "Solutions de sécurité professionnelles pour bâtiments et installations"
   },
-  "Urgent": {
-    "title": "Prototype medical en phase critique, support immediat requis.",
-    "description": "Un module de surveillance electronique doit etre finalise rapidement pour les essais cliniques. Contribution technique et materielle bienvenue.",
-    "button": "Voir le projet urgent"
+  "ServiceElec": {
+    "title": "Installation électrique",
+    "subtitle": "Installations électriques professionnelles pour constructions neuves et existantes",
+    "intro": "De la planification à l'exécution, nous réalisons des installations électriques professionnelles pour toutes les exigences.",
+    "item1": "Construction neuve & rénovation",
+    "item2": "Tableaux de distribution & armoires de comptage",
+    "item3": "Prises & systèmes d'éclairage",
+    "item4": "Diagnostic de pannes & réparation",
+    "item5": "Schémas électriques",
+    "item6": "Installation du compteur pour le raccordement au réseau"
   },
-  "Newsletter": {
-    "tag": "Newsletter",
-    "title": "Reste informee sur les nouveaux projets electroniques",
-    "description": "Recois des mises a jour sur les nouveaux prototypes, les cas clients et les publications techniques du laboratoire.",
+  "ServiceEnergy": {
+    "title": "Énergie & Technique du bâtiment",
+    "subtitle": "Solutions modernes pour une meilleure efficacité énergétique",
+    "intro": "Nous développons des solutions énergétiques sur mesure qui réduisent vos coûts d'exploitation et augmentent le confort.",
+    "item1": "Systèmes économes en énergie",
+    "item2": "Gestion de charge",
+    "item3": "Technologie réseau & communications"
+  },
+  "ServiceSmartHome": {
+    "title": "Maison intelligente",
+    "subtitle": "Habitat et travail intelligents avec la technologie la plus moderne",
+    "intro": "Nous intégrons des systèmes domotiques performants qui vous offrent un confort maximal et des économies d'énergie.",
+    "item1": "Contrôle intelligent de l'éclairage, du chauffage & de la sécurité",
+    "item2": "Systèmes domotiques modernes KNX / LOXONE",
+    "item3": "Automatisation pour plus de confort"
+  },
+  "ServicePV": {
+    "title": "Photovoltaïque & Énergie",
+    "subtitle": "Approvisionnement énergétique durable de la planification à la mise en service",
+    "intro": "Profitez de l'énergie solaire propre et réduisez durablement vos coûts énergétiques.",
+    "item1": "Planification & installation de systèmes PV",
+    "item2": "Stockage par batterie",
+    "item3": "Optimiser l'autoconsommation"
+  },
+  "ServiceIndustry": {
+    "title": "Industrie",
+    "subtitle": "Solutions fiables pour les exigences industrielles",
+    "intro": "Nous accompagnons les entreprises industrielles avec une expertise approfondie en construction d'armoires, mise en service et documentation.",
+    "item1": "Construction d'armoires de commande",
+    "item2": "Mise en service d'équipements",
+    "item3": "Schémas électriques"
+  },
+  "ServiceMeasure": {
+    "title": "Métrologie",
+    "subtitle": "Mesures précises selon les normes en vigueur",
+    "intro": "Nous effectuons toutes les mesures légalement requises et recommandées selon les normes DIN VDE en vigueur.",
+    "item1": "Mesures d'installations DIN VDE 0100 600 / 0100 105",
+    "item2": "Mesures d'équipements DIN VDE 0701-0702",
+    "item3": "Machines DIN VDE 0113-1",
+    "item4": "Test d'installations PV DIN VDE 0126-23",
+    "item5": "Test d'appareils médicaux DIN EN 62353 VDE 0751"
+  },
+  "ServiceElectronics": {
+    "title": "Électronique & Import/Export",
+    "subtitle": "Service électronique complet et commerce international",
+    "intro": "De la maintenance au commerce international, nous offrons une large gamme de services électroniques.",
+    "item1": "Maintenance et réparation d'appareils électriques",
+    "item2": "Location d'appareils électriques",
+    "item3": "Achat et vente d'appareils électriques",
+    "item4": "Achat et vente de composants électroniques",
+    "item5": "Import & Export"
+  },
+  "ServiceMaintenance": {
+    "title": "Maintenance & Service",
+    "subtitle": "Prise en charge fiable de vos installations",
+    "intro": "Une maintenance régulière prolonge la durée de vie de vos installations et prévient les pannes coûteuses.",
+    "item1": "Inspections régulières",
+    "item2": "Service de dépannage",
+    "item3": "Extensions d'installations existantes"
+  },
+  "About": {
+    "tag": "À propos",
+    "title": "Partenariat et compétence",
+    "description1": "Nous nous considérons comme un partenaire pour les entreprises ayant des activités en Europe, ainsi que pour les entreprises souhaitant investir en Afrique, vendre des marchandises ou réaliser des projets. Avec notre expérience, nous accompagnons votre projet et vous conseillons à chaque étape.",
+    "description2": "Notre entreprise spécialisée en énergie et technique du bâtiment se distingue par une grande compétence, fiabilité et une exécution soignée. Nous développons et réalisons des solutions individuelles adaptées exactement à vos besoins.",
+    "description3": "Notre objectif est de relier technologie moderne et utilisation efficace de l'énergie. Nous accordons de l'importance aux matériaux de haute qualité, au respect des normes actuelles et à un conseil personnalisé. Ainsi, nous créons des solutions durables et pérennes pour nos clients.",
+    "strengthsTitle": "Nos forces",
+    "s1": "Planification & exécution professionnelles",
+    "s2": "Ponctualité & fiabilité",
+    "s3": "Conseil personnalisé",
+    "s4": "Solutions pérennes",
+    "internationalTitle": "Actif à l'international",
+    "internationalDesc": "Des partenariats pour des projets en Afrique sont également possibles.",
+    "internationalDetail": "Nous accompagnons les entreprises opérant en Europe ou souhaitant investir en Afrique, vendre des marchandises ou réaliser des projets."
+  },
+  "WhyUs": {
+    "title": "Pourquoi nous?",
+    "subtitle": "Nous pensons non seulement à aujourd'hui, mais à l'énergie de demain.",
+    "r1": "Solutions individuelles plutôt que solutions standard",
+    "r2": "Utilisation de technologies modernes",
+    "r3": "Normes de sécurité élevées",
+    "r4": "Prix équitables & transparents",
+    "r5": "Professionnel & fiable",
+    "r6": "Rendez-vous rapides"
+  },
+  "Partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Nous travaillons avec des fabricants et partenaires technologiques leaders.",
+    "more": "Et plus"
+  },
+  "Projects": {
+    "title": "Projets",
+    "subtitle": "Projets de référence issus de notre travail",
+    "p1Title": "Maison individuelle – installation électrique complète",
+    "p1Desc": "Installation électrique complète d'une maison individuelle avec systèmes de sécurité modernes.",
+    "p2Title": "Immeuble collectif – installation électrique",
+    "p2Desc": "Planification et exécution de l'installation électrique dans un immeuble collectif.",
+    "p3Title": "Rénovation domotique",
+    "p3Desc": "Modernisation d'un bâtiment existant avec système domotique KNX.",
+    "p4Title": "Bâtiment commercial – optimisation énergétique",
+    "p4Desc": "Mesures d'efficacité énergétique et gestion de charge pour un bâtiment commercial.",
+    "viewAll": "Voir tous les projets",
+    "category1": "Résidentiel",
+    "category2": "Maison intelligente",
+    "category3": "Commercial"
+  },
+  "Contact": {
+    "tag": "Contact",
+    "title": "Prenez contact",
+    "subtitle": "Utilisez notre formulaire de contact ou appelez-nous directement – nous vous répondrons dans les plus brefs délais.",
+    "personName": "Cyrille Nokam",
+    "phone": "+49 176 45817025",
+    "email": "info@igee-elektroniker.com",
+    "address": "Christophstr 46, 73033 Göppingen",
+    "formTitle": "Formulaire de contact",
     "namePlaceholder": "Votre nom",
-    "emailPlaceholder": "Votre adresse email",
-    "button": "S abonner"
+    "emailPlaceholder": "Votre adresse e-mail",
+    "phonePlaceholder": "Votre numéro de téléphone (optionnel)",
+    "messagePlaceholder": "Votre message...",
+    "send": "Envoyer le message",
+    "orCall": "Appelez-nous directement",
+    "orEmail": "Envoyer un e-mail",
+    "responseTime": "Nous répondons généralement dans les 24 heures.",
+    "serviceLabel": "Service souhaité",
+    "servicePlaceholder": "– Veuillez choisir –",
+    "serviceGeneral": "Demande générale",
+    "sElec": "Installation électrique",
+    "sEnergy": "Énergie & Technique du bâtiment",
+    "sSmart": "Maison intelligente",
+    "sPV": "Photovoltaïque & Énergie",
+    "sIndustry": "Industrie",
+    "sMeasure": "Métrologie",
+    "sLighting": "Éclairage",
+    "sElectronics": "Électronique & Import/Export",
+    "sMaintenance": "Maintenance & Service"
   },
-  "LatestNews": {
-    "title": "Dernieres nouvelles du labo",
-    "viewAll": "Tout voir",
-    "item1Title": "Nouveau banc de test pour cartes STM32 et ESP32",
-    "item1Meta": "Equipe IGEE - 1 Mai 2025",
-    "item2Title": "Comment reduire la consommation d un noeud IoT autonome",
-    "item2Meta": "Equipe IGEE - 1 Mai 2025",
-    "item3Title": "Etude de fiabilite sur les connecteurs en milieu humide",
-    "item3Meta": "Equipe IGEE - 1 Mai 2025"
-  },
-  "Testimonials": {
-    "title": "Ce que disent nos partenaires techniques",
-    "subtitle": "Des retours concrets de clients ayant confie des projets electroniques strategiques a Igee-elektronik.",
-    "card1Name": "Sharan Shah",
-    "card1Role": "Responsable production",
-    "card1Quote": "Le redesign de nos cartes de commande a reduit les pannes de 38 pourcent. L execution a ete rapide et tres professionnelle.",
-    "card2Name": "Michelle Anderson",
-    "card2Role": "Directrice R&D",
-    "card2Quote": "Le prototype embarque livre par IGEE a valide notre produit en quelques semaines. Excellente maitrise materielle et logicielle."
-  },
-  "Volunteer": {
-    "title": "Lance ton projet electronique",
-    "description": "Passe de l idee au prototype avec un accompagnement complet: architecture, PCB, firmware et tests terrain.",
+  "CTA": {
+    "title": "Démarrez votre projet avec IGEE-Elektroniker",
+    "description": "De la planification à l'exécution – nous vous accompagnons à chaque étape. Contactez-nous pour un devis sans engagement.",
     "button": "Demander un devis"
   },
   "Footer": {
-    "about": "Igee-elektronik developpe des solutions electroniques robustes pour IoT, energie, medical et automation.",
-    "officeTitle": "Bureau technique IGEE",
-    "address": "Friedrichstrasse 123, 10117 Berlin, Allemagne",
-    "causesTitle": "Domaines",
-    "cause1": "Conception PCB",
-    "cause2": "Electronique de puissance",
-    "cause3": "Systemes embarques",
-    "cause4": "Instrumentation",
-    "cause5": "Maintenance industrielle",
+    "about": "IGEE-Elektroniker est votre partenaire fiable pour les installations électriques modernes, l'efficacité énergétique et la domotique intelligente – nationalement et internationalement.",
+    "officeTitle": "Bureau",
+    "address": "Christophstr 46, 73033 Göppingen",
+    "phone": "+49 176 45817025",
+    "email": "info@igee-elektroniker.com",
+    "servicesTitle": "Services",
+    "s1": "Installation électrique",
+    "s2": "Maison intelligente",
+    "s3": "Photovoltaïque",
+    "s4": "Métrologie",
+    "s5": "Industrie",
     "linksTitle": "Liens rapides",
-    "link1": "Services",
-    "link2": "Projets",
-    "link3": "Blog technique",
-    "link4": "Contact",
-    "link5": "Support",
-    "copyright": "(c) Tous droits reserves par Igee-elektronik."
+    "link1": "Accueil",
+    "link2": "Services",
+    "link3": "À propos",
+    "link4": "Projets",
+    "link5": "Contact",
+    "copyright": "© 2026 IGEE-Elektroniker – Tous droits réservés"
   },
   "Common": {
-    "raised": "Prix de depart",
-    "goal": "Delai moyen"
+    "learnMore": "En savoir plus",
+    "viewAll": "Tout voir",
+    "contactUs": "Nous contacter",
+    "backToServices": "Retour aux services",
+    "requestQuote": "Demander un devis"
   }
 }

@@ -1,643 +1,519 @@
-import LanguageSelect from "@/components/language-select";
-import HeroSlider from "@/components/hero-slider";
-import MobileDrawerNav from "@/components/mobile-drawer-nav";
-import ThemeToggle from "@/components/theme-toggle";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import HeroSlider from "@/components/hero-slider";
 
-function MailIcon() {
+/* ── Service icons ──────────────────────────────────────────────── */
+function ElecIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden="true">
-      <path
-        d="M4 7h16v10H4V7Zm0 1.5 8 5 8-5"
-        stroke="currentColor"
-        strokeWidth="1.7"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(0,147,210,0.10)" />
+      <path d="M26 10 16 26h10l-4 12 14-18H22l4-10Z" fill="#0093D2" />
     </svg>
   );
 }
 
-function PhoneIcon() {
+function EnergyIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden="true">
-      <path
-        d="M6.5 4.5h3l1 4-2 2a14 14 0 0 0 5 5l2-2 4 1v3c0 .6-.4 1-1 1A14 14 0 0 1 5.5 5.5c0-.6.4-1 1-1Z"
-        stroke="currentColor"
-        strokeWidth="1.7"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(29,200,205,0.10)" />
+      <rect x="12" y="30" width="5" height="8" rx="1" fill="#1DC8CD" />
+      <rect x="21" y="22" width="5" height="16" rx="1" fill="#1DC8CD" />
+      <rect x="30" y="14" width="5" height="24" rx="1" fill="#0093D2" />
     </svg>
   );
 }
 
-function DonationIcon() {
+function SmartHomeIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-10 w-10" fill="none" aria-hidden="true">
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(40,207,145,0.10)" />
       <path
-        d="M3 16c1.8-1.7 3.4-2 5-1l2 1.2c1 .6 2.2.6 3.2 0l1.7-1a3 3 0 0 1 3.1-.1l2 1.1"
-        stroke="#0093D2"
-        strokeWidth="1.7"
-        strokeLinecap="round"
-      />
-      <path
-        d="M9.3 11.5V7.8c0-1.8 1.4-3.2 3.2-3.2s3.2 1.4 3.2 3.2v3.7"
-        stroke="#1DC8CD"
-        strokeWidth="1.7"
-        strokeLinecap="round"
-      />
-      <circle cx="12.5" cy="9.5" r="2" fill="#28CF91" />
-    </svg>
-  );
-}
-
-function VolunteerIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-10 w-10" fill="none" aria-hidden="true">
-      <path
-        d="m5 13 3-3 5 5-3 3a2.4 2.4 0 0 1-3.4 0L5 16.4a2.4 2.4 0 0 1 0-3.4Z"
-        stroke="#0093D2"
-        strokeWidth="1.7"
-        strokeLinejoin="round"
-      />
-      <path
-        d="m19 11-3 3-5-5 3-3a2.4 2.4 0 0 1 3.4 0l1.6 1.6a2.4 2.4 0 0 1 0 3.4Z"
-        stroke="#FF4D7E"
-        strokeWidth="1.7"
-        strokeLinejoin="round"
-      />
-      <circle cx="12" cy="12" r="1.2" fill="#1DC8CD" />
-    </svg>
-  );
-}
-
-function FoodIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-10 w-10" fill="none" aria-hidden="true">
-      <path
-        d="M12 19c-3.6 0-6-2.3-6-5.5 0-1.7.8-3.2 2.2-4.2l3.8 3 3.8-3a5.2 5.2 0 0 1 2.2 4.2c0 3.2-2.4 5.5-6 5.5Z"
+        d="M12 24 24 13 36 24v14H28v-8h-8v8H12V24Z"
         stroke="#28CF91"
-        strokeWidth="1.7"
+        strokeWidth="2"
         strokeLinejoin="round"
+        fill="none"
       />
-      <path d="M12 9.2V4.5" stroke="#0093D2" strokeWidth="1.7" strokeLinecap="round" />
-      <path d="M10 4.5h4" stroke="#0093D2" strokeWidth="1.7" strokeLinecap="round" />
-      <path d="M18 5.5v2.5l-1.2 1" stroke="#FF4D7E" strokeWidth="1.7" strokeLinecap="round" />
+      <circle cx="24" cy="24" r="2.5" fill="#28CF91" />
     </svg>
   );
 }
 
-function LogoMark() {
+function SolarIcon() {
   return (
-    <svg viewBox="0 0 48 48" className="h-11 w-11" fill="none" aria-hidden="true">
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(255,200,0,0.12)" />
+      <circle cx="24" cy="24" r="7" fill="#FFB800" />
+      <line x1="24" y1="8" x2="24" y2="13" stroke="#FFB800" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="24" y1="35" x2="24" y2="40" stroke="#FFB800" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="8" y1="24" x2="13" y2="24" stroke="#FFB800" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="35" y1="24" x2="40" y2="24" stroke="#FFB800" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="13" y1="13" x2="17" y2="17" stroke="#FFB800" strokeWidth="2" strokeLinecap="round" />
+      <line x1="31" y1="31" x2="35" y2="35" stroke="#FFB800" strokeWidth="2" strokeLinecap="round" />
+      <line x1="35" y1="13" x2="31" y2="17" stroke="#FFB800" strokeWidth="2" strokeLinecap="round" />
+      <line x1="17" y1="31" x2="13" y2="35" stroke="#FFB800" strokeWidth="2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function IndustryIcon() {
+  return (
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(0,147,210,0.10)" />
+      <rect x="10" y="28" width="28" height="10" rx="1.5" stroke="#0093D2" strokeWidth="2" />
+      <path d="M14 28V18l7 5V18l7 5V18l7 5v5" stroke="#0093D2" strokeWidth="2" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function MeasureIcon() {
+  return (
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(255,77,126,0.10)" />
+      <circle cx="24" cy="24" r="11" stroke="#FF4D7E" strokeWidth="2" />
+      <path d="M24 13v5M24 30v5M13 24h5M30 24h5" stroke="#FF4D7E" strokeWidth="2" strokeLinecap="round" />
+      <path d="M24 24 30 18" stroke="#FF4D7E" strokeWidth="2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function LightingIcon() {
+  return (
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(255,200,0,0.12)" />
       <path
-        d="M24 4 40.3 13.5v21L24 44 7.7 34.5v-21L24 4Z"
-        fill="#E8FAFC"
+        d="M24 13c-4.4 0-8 3.6-8 8 0 3 1.6 5.6 4 7v3h8v-3c2.4-1.4 4-4 4-7 0-4.4-3.6-8-8-8Z"
+        stroke="#FFB800"
+        strokeWidth="2"
+        fill="none"
+      />
+      <line x1="20" y1="34" x2="28" y2="34" stroke="#FFB800" strokeWidth="2" strokeLinecap="round" />
+      <line x1="21" y1="37" x2="27" y2="37" stroke="#FFB800" strokeWidth="2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function ElectronicsIcon() {
+  return (
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(40,207,145,0.10)" />
+      <rect x="12" y="16" width="24" height="16" rx="2" stroke="#28CF91" strokeWidth="2" />
+      <circle cx="18" cy="24" r="2" fill="#28CF91" />
+      <circle cx="24" cy="24" r="2" fill="#1DC8CD" />
+      <circle cx="30" cy="24" r="2" fill="#0093D2" />
+    </svg>
+  );
+}
+
+function MaintenanceIcon() {
+  return (
+    <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="rgba(29,200,205,0.10)" />
+      <path
+        d="M30 14a8 8 0 1 0 0 14 8 8 0 0 0 0-14Zm0 0-2 2M18 30l-4 4"
         stroke="#1DC8CD"
         strokeWidth="2"
+        strokeLinecap="round"
       />
-      <path
-        d="M15 18.8 24.2 13l8.8 5.3v3.7l-8.8 5.2-9.2-5.5v-2.9Z"
-        fill="#0093D2"
-      />
-      <path d="m16 28.7 8.2 4.7 8.8-5.1" stroke="#28CF91" strokeWidth="2.2" />
+      <circle cx="24" cy="21" r="4" stroke="#1DC8CD" strokeWidth="2" />
     </svg>
   );
 }
 
+function CheckIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" fill="rgba(40,207,145,0.15)" />
+      <path d="M8 12l3 3 5-5" stroke="#28CF91" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/* ── Component ──────────────────────────────────────────────────── */
 export default function HomePage() {
-  const topBar = useTranslations("TopBar");
-  const theme = useTranslations("Theme");
-  const header = useTranslations("Header");
-  const help = useTranslations("Help");
-  const causes = useTranslations("Causes");
-  const news = useTranslations("News");
-  const urgent = useTranslations("Urgent");
-  const newsletter = useTranslations("Newsletter");
-  const latestNews = useTranslations("LatestNews");
-  const testimonials = useTranslations("Testimonials");
-  const volunteer = useTranslations("Volunteer");
-  const footer = useTranslations("Footer");
-  const common = useTranslations("Common");
+  const welcome = useTranslations("Welcome");
+  const services = useTranslations("Services");
+  const whyUs = useTranslations("WhyUs");
+  const partners = useTranslations("Partners");
+  const projects = useTranslations("Projects");
+  const cta = useTranslations("CTA");
+  const hero = useTranslations("Hero");
 
-  const helpCards = [
+  const serviceCards = [
     {
-      title: help("card1Title"),
-      description: help("card1Description"),
-      icon: <DonationIcon />
+      slug: "elektroinstallation",
+      title: services("elecTitle"),
+      desc: services("elecDesc"),
+      icon: <ElecIcon />
     },
     {
-      title: help("card2Title"),
-      description: help("card2Description"),
-      icon: <VolunteerIcon />
+      slug: "energie-gebaeudetechnik",
+      title: services("energyTitle"),
+      desc: services("energyDesc"),
+      icon: <EnergyIcon />
     },
     {
-      title: help("card3Title"),
-      description: help("card3Description"),
-      icon: <FoodIcon />
+      slug: "smart-home",
+      title: services("smartTitle"),
+      desc: services("smartDesc"),
+      icon: <SmartHomeIcon />
+    },
+    {
+      slug: "photovoltaik",
+      title: services("pvTitle"),
+      desc: services("pvDesc"),
+      icon: <SolarIcon />
+    },
+    {
+      slug: "industrie",
+      title: services("industryTitle"),
+      desc: services("industryDesc"),
+      icon: <IndustryIcon />
+    },
+    {
+      slug: "messtechnik",
+      title: services("measureTitle"),
+      desc: services("measureDesc"),
+      icon: <MeasureIcon />
+    },
+    {
+      slug: "beleuchtung",
+      title: services("lightingTitle"),
+      desc: services("lightingDesc"),
+      icon: <LightingIcon />
+    },
+    {
+      slug: "elektronik",
+      title: services("electronicsTitle"),
+      desc: services("electronicsDesc"),
+      icon: <ElectronicsIcon />
+    },
+    {
+      slug: "wartung",
+      title: services("maintenanceTitle"),
+      desc: services("maintenanceDesc"),
+      icon: <MaintenanceIcon />
     }
   ];
 
-  const causeCards = [
-    {
-      title: causes("card1Title"),
-      raised: causes("card1Raised"),
-      goal: causes("card1Goal"),
-      image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
-    },
-    {
-      title: causes("card2Title"),
-      raised: causes("card2Raised"),
-      goal: causes("card2Goal"),
-      image:
-        "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=80"
-    },
-    {
-      title: causes("card3Title"),
-      raised: causes("card3Raised"),
-      goal: causes("card3Goal"),
-      image:
-        "https://images.unsplash.com/photo-1553406830-ef2513450d76?auto=format&fit=crop&w=1200&q=80"
-    }
+  const whyItems = [
+    whyUs("r1"),
+    whyUs("r2"),
+    whyUs("r3"),
+    whyUs("r4"),
+    whyUs("r5"),
+    whyUs("r6")
   ];
 
-  const topNewsCards = [
+  const projectCards = [
     {
-      title: news("card1Title"),
-      description: news("card1Description"),
+      title: projects("p1Title"),
+      desc: projects("p1Desc"),
+      category: projects("category1"),
       image:
-        "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=80"
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: news("card2Title"),
-      description: news("card2Description"),
+      title: projects("p2Title"),
+      desc: projects("p2Desc"),
+      category: projects("category1"),
       image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80"
+        "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: news("card3Title"),
-      description: news("card3Description"),
+      title: projects("p3Title"),
+      desc: projects("p3Desc"),
+      category: projects("category2"),
       image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+        "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      title: projects("p4Title"),
+      desc: projects("p4Desc"),
+      category: projects("category3"),
+      image:
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
     }
-  ];
-
-  const latestItems = [
-    {
-      title: latestNews("item1Title"),
-      meta: latestNews("item1Meta"),
-      image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
-    },
-    {
-      title: latestNews("item2Title"),
-      meta: latestNews("item2Meta"),
-      image:
-        "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=400&q=80"
-    },
-    {
-      title: latestNews("item3Title"),
-      meta: latestNews("item3Meta"),
-      image:
-        "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=400&q=80"
-    }
-  ];
-
-  const donorCards = [
-    {
-      name: testimonials("card1Name"),
-      role: testimonials("card1Role"),
-      quote: testimonials("card1Quote"),
-      avatar:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      name: testimonials("card2Name"),
-      role: testimonials("card2Role"),
-      quote: testimonials("card2Quote"),
-      avatar:
-        "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=200&q=80"
-    }
-  ];
-
-  const navItems = [
-    { href: "#", label: topBar("home") },
-    { href: "#causes", label: topBar("causes") },
-    { href: "#events", label: topBar("events") },
-    { href: "#news", label: topBar("blog") },
-    { href: "#contact", label: topBar("contact") }
   ];
 
   const sliderImages = [
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2200&q=80",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2200&q=80",
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2200&q=80"
+    "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=2200&q=80",
+    "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2200&q=80",
+    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=2200&q=80"
   ];
 
   return (
-    <main className="bg-[var(--page-bg)] text-[var(--foreground)]">
-      <div className="fixed inset-x-0 top-0 z-50 bg-primary text-white">
-        <div className="mx-auto flex h-14 max-w-[1520px] items-center gap-3 px-4 sm:px-6">
-          <MobileDrawerNav
-            menuLabel={topBar("menu")}
-            closeLabel={topBar("close")}
-            items={navItems}
-          />
-
-          <nav className="hidden items-center gap-6 text-sm font-semibold md:flex">
-            <a href="#">{topBar("home")}</a>
-            <a href="#causes">{topBar("causes")}</a>
-            <a href="#events">{topBar("events")}</a>
-            <a href="#news">{topBar("blog")}</a>
-            <a href="#contact">{topBar("contact")}</a>
-          </nav>
-
-          <div className="ml-auto flex items-center gap-2">
-            <LanguageSelect ariaLabel={topBar("language")} />
-
-            <ThemeToggle
-              lightLabel={theme("light")}
-              darkLabel={theme("dark")}
-              ariaLabel={theme("switch")}
-              className="border-white/35 bg-black/20 text-white hover:border-white hover:text-white"
-            />
-          </div>
-        </div>
-      </div>
-
-      <header className="fixed inset-x-0 top-14 z-40 border-b border-border bg-[var(--surface)] shadow-sm">
-        <div className="mx-auto flex h-[92px] max-w-[1520px] items-center justify-between gap-4 px-4 sm:px-6">
-          <div className="flex items-center gap-3">
-            <LogoMark />
-            <div>
-              <p className="text-3xl font-black leading-none text-midnight">{header("orgName")}</p>
-              <p className="mt-1 text-xs font-semibold tracking-[0.16em] text-muted">
-                {header("orgType")}
+    <main>
+      {/* ── Hero ────────────────────────────────────────────────── */}
+      <section className="relative">
+        <HeroSlider images={sliderImages} className="h-[340px] sm:h-[480px] lg:h-[640px]" />
+        {/* Strong left-to-right gradient so text is always legible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
+        {/* Extra vertical darkening on mobile where the full image shows */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto w-full max-w-[1520px] px-4 sm:px-6">
+            <div className="inline-block max-w-xl rounded-2xl bg-black/50 px-8 py-8 backdrop-blur-sm">
+              <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-secondary">
+                {hero("subtitle")}
               </p>
+              <h1 className="text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+                {hero("title")}
+              </h1>
+              <p className="mt-4 max-w-md text-base leading-relaxed text-white/90">
+                {hero("description")}
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Link
+                  href="/contact"
+                  className="rounded-lg bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:bg-secondary"
+                >
+                  {hero("ctaContact")}
+                </Link>
+                <Link
+                  href="/services"
+                  className="rounded-lg border border-white/70 bg-white/15 px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition hover:bg-white/25"
+                >
+                  {hero("ctaServices")}
+                </Link>
+              </div>
             </div>
           </div>
-
-          <div className="hidden w-full gap-4 text-sm lg:grid lg:grid-cols-3 lg:items-center lg:justify-end">
-            <a
-              href="mailto:contact@igee-elektronick.com"
-              className="flex items-center gap-3 rounded-xl border border-border bg-[var(--surface-soft)] px-3 py-3"
-            >
-              <span className="text-muted">
-                <MailIcon />
-              </span>
-              <p className="font-semibold text-midnight">{header("email")}</p>
-            </a>
-
-            <a
-              href="tel:+497031234567"
-              className="flex items-center gap-3 rounded-xl border border-border bg-[var(--surface-soft)] px-3 py-3"
-            >
-              <span className="text-muted">
-                <PhoneIcon />
-              </span>
-              <p className="font-semibold text-midnight">{header("phone")}</p>
-            </a>
-
-            <button
-              type="button"
-              className="rounded-xl border border-[var(--color-error)] bg-transparent px-5 py-3 text-sm font-bold text-[var(--color-error)] transition hover:bg-[var(--color-error)] hover:text-white"
-            >
-              {header("donateNow")}
-            </button>
-          </div>
-
-          <div className="flex items-center gap-2 lg:hidden">
-            <a
-              href="mailto:contact@igee-elektronick.com"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-[var(--surface-soft)] text-muted"
-              aria-label={header("emailLabel")}
-            >
-              <MailIcon />
-            </a>
-            <a
-              href="tel:+497031234567"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-[var(--surface-soft)] text-muted"
-              aria-label={header("callLabel")}
-            >
-              <PhoneIcon />
-            </a>
-            <button
-              type="button"
-              className="rounded-full border border-[var(--color-error)] px-3 py-2 text-xs font-bold text-[var(--color-error)]"
-            >
-              {header("donateNow")}
-            </button>
-          </div>
-        </div>
-      </header>
-
-      <div className="pt-[148px]">
-        <HeroSlider images={sliderImages} className="h-[300px] sm:h-[430px] lg:h-[600px]" />
-
-      <section id="events" className="bg-[var(--section-bg)] py-16">
-        <div className="mx-auto max-w-[1520px] px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-black text-midnight">{help("title")}</h2>
-          <p className="mx-auto mt-3 max-w-3xl text-sm text-muted">{help("subtitle")}</p>
-
-          <div className="mt-10 grid gap-8 md:grid-cols-3">
-            {helpCards.map((item) => (
-              <article key={item.title} className="px-4">
-                <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-panel">
-                  {item.icon}
-                </div>
-                <h3 className="text-2xl font-black text-midnight">{item.title}</h3>
-                <p className="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-muted">
-                  {item.description}
-                </p>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 
-      <section id="causes" className="bg-[var(--section-bg)] pb-16">
+      {/* ── Welcome / Intro ─────────────────────────────────────── */}
+      <section className="bg-[var(--section-bg)] py-20">
         <div className="mx-auto max-w-[1520px] px-4 sm:px-6">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-4xl font-black text-midnight">{causes("title")}</h2>
-            <p className="mt-3 text-sm text-muted">{causes("subtitle")}</p>
-          </div>
-
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {causeCards.map((card) => (
-              <article
-                key={card.title}
-                className="overflow-hidden rounded-sm border border-border bg-[var(--surface)]"
-              >
-                <div
-                  className="h-48 bg-cover bg-center"
-                  style={{ backgroundImage: `url('${card.image}')` }}
-                />
-                <div className="p-5">
-                  <h3 className="text-xl font-bold leading-snug text-midnight">{card.title}</h3>
-
-                  <div className="mt-4 grid grid-cols-2 overflow-hidden rounded-sm border border-border">
-                    <div className="border-r border-border px-3 py-2">
-                      <p className="text-[11px] font-semibold uppercase tracking-wide text-muted">
-                        {common("raised")}
-                      </p>
-                      <p className="text-2xl font-black text-primary">{card.raised}</p>
-                    </div>
-                    <div className="px-3 py-2">
-                      <p className="text-[11px] font-semibold uppercase tracking-wide text-muted">
-                        {common("goal")}
-                      </p>
-                      <p className="text-2xl font-black text-midnight">{card.goal}</p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="mt-9 text-center">
-            <a
-              href="#"
-              className="inline-block rounded-md bg-primary px-7 py-3 text-sm font-bold text-white transition hover:bg-secondary"
-            >
-              {causes("viewAll")}
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="news" className="bg-[var(--section-bg)] py-16">
-        <div className="mx-auto max-w-[1520px] px-4 sm:px-6">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-4xl font-black text-midnight">{news("title")}</h2>
-            <p className="mt-3 text-sm text-muted">{news("subtitle")}</p>
-          </div>
-
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {topNewsCards.map((card) => (
-              <article key={card.title}>
-                <div
-                  className="relative h-48 bg-cover bg-center"
-                  style={{ backgroundImage: `url('${card.image}')` }}
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-secondary">
+                {welcome("tag")}
+              </p>
+              <h2 className="mt-3 text-4xl font-black leading-tight text-midnight">
+                {welcome("title")}
+              </h2>
+              <p className="mt-5 text-sm leading-relaxed text-muted">{welcome("description1")}</p>
+              <p className="mt-4 text-sm leading-relaxed text-muted">{welcome("description2")}</p>
+              <div className="mt-6 inline-block rounded-full border border-primary/30 bg-primary/8 px-4 py-1.5 text-xs font-semibold text-primary">
+                {welcome("badge")}
+              </div>
+              <div className="mt-6">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-secondary transition-colors"
                 >
-                  <span className="absolute right-2 top-2 rounded bg-white px-2 py-1 text-[11px] font-semibold text-midnight">
-                    {news("date")}
-                  </span>
-                </div>
-                <h3 className="mt-4 text-2xl font-bold leading-snug text-midnight">{card.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{card.description}</p>
-              </article>
-            ))}
-          </div>
-
-          <div className="mt-9 text-center">
-            <a
-              href="#"
-              className="inline-block rounded-md bg-primary px-7 py-3 text-sm font-bold text-white transition hover:bg-secondary"
-            >
-              {news("viewAll")}
-            </a>
+                  {welcome("learnMore")}
+                  <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor">
+                    <path
+                      fillRule="evenodd"
+                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div
+                className="min-h-[200px] rounded-2xl bg-cover bg-center"
+                style={{
+                  backgroundImage:
+                    "url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=700&q=80')"
+                }}
+                role="img"
+                aria-label="Electrical installation"
+              />
+              <div className="grid gap-4">
+                <div
+                  className="min-h-[96px] rounded-2xl bg-cover bg-center"
+                  style={{
+                    backgroundImage:
+                      "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=700&q=80')"
+                  }}
+                  role="img"
+                  aria-label="Solar panels"
+                />
+                <div
+                  className="min-h-[96px] rounded-2xl bg-cover bg-center"
+                  style={{
+                    backgroundImage:
+                      "url('https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=700&q=80')"
+                  }}
+                  role="img"
+                  aria-label="Smart home"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="relative h-[390px] overflow-hidden sm:h-[420px]">
+      {/* ── Services grid ───────────────────────────────────────── */}
+      <section id="services" className="py-20">
+        <div className="mx-auto max-w-[1520px] px-4 sm:px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-4xl font-black text-midnight">{services("title")}</h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted">{services("subtitle")}</p>
+          </div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {serviceCards.map((card) => (
+              <Link
+                key={card.slug}
+                href={`/services/${card.slug}` as "/"}
+                className="group flex flex-col gap-4 rounded-2xl border border-border bg-[var(--surface)] p-6 transition hover:border-primary hover:shadow-panel"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--section-bg)]">
+                  {card.icon}
+                </div>
+                <div>
+                  <h3 className="text-lg font-black text-midnight group-hover:text-primary transition-colors">
+                    {card.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">{card.desc}</p>
+                </div>
+                <div className="mt-auto flex items-center gap-1 text-xs font-bold text-primary">
+                  <span>→</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/services"
+              className="inline-block rounded-lg bg-primary px-8 py-3.5 text-sm font-bold text-white transition hover:bg-secondary"
+            >
+              {services("viewAll")}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Why us ──────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden py-20">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2200&q=80')"
+              "url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2200&q=80')"
           }}
         />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative mx-auto flex h-full max-w-[1520px] items-center justify-center px-4 sm:px-6">
-          <article className="w-full max-w-xl rounded-md border border-border bg-[var(--surface)] p-8 text-center shadow-panel">
-            <h2 className="text-4xl font-black leading-tight text-midnight">{urgent("title")}</h2>
-            <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-dustGray">
-              {urgent("description")}
-            </p>
-            <button
-              type="button"
-              className="mt-6 rounded-md bg-primary px-8 py-3 text-sm font-bold text-white transition hover:bg-secondary"
-            >
-              {urgent("button")}
-            </button>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" className="bg-[var(--section-bg)] py-16">
-        <div className="mx-auto grid max-w-[1520px] gap-10 px-4 sm:px-6 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold text-secondary">{newsletter("tag")}</p>
-            <h2 className="mt-3 max-w-xl text-4xl font-black leading-tight text-midnight">
-              {newsletter("title")}
-            </h2>
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted">
-              {newsletter("description")}
-            </p>
-
-            <form className="mt-7 flex max-w-md flex-col gap-3">
-              <input
-                type="text"
-                placeholder={newsletter("namePlaceholder")}
-                className="rounded-sm border border-border bg-[var(--surface)] px-4 py-3 text-sm text-midnight outline-none ring-0 placeholder:text-muted focus:border-primary focus:ring-2 focus:ring-[var(--ring)]"
-              />
-              <input
-                type="email"
-                placeholder={newsletter("emailPlaceholder")}
-                className="rounded-sm border border-border bg-[var(--surface)] px-4 py-3 text-sm text-midnight outline-none ring-0 placeholder:text-muted focus:border-primary focus:ring-2 focus:ring-[var(--ring)]"
-              />
-              <button
-                type="button"
-                className="rounded-sm bg-[var(--color-error)] px-4 py-3 text-sm font-bold text-white transition hover:opacity-90"
-              >
-                {newsletter("button")}
-              </button>
-            </form>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between border-b border-border pb-3">
-              <h2 className="text-4xl font-black text-midnight">{latestNews("title")}</h2>
-              <a href="#" className="text-sm font-semibold text-[var(--color-error)]">
-                {latestNews("viewAll")}
-              </a>
+        <div className="absolute inset-0 bg-midnight/80" />
+        <div className="relative mx-auto max-w-[1520px] px-4 sm:px-6">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h2 className="text-4xl font-black text-white">{whyUs("title")}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-white/75">{whyUs("subtitle")}</p>
             </div>
-
-            <div className="mt-4 space-y-4">
-              {latestItems.map((item) => (
-                <article key={item.title} className="flex gap-4">
-                  <div
-                    className="h-16 w-24 shrink-0 rounded-sm bg-cover bg-center"
-                    style={{ backgroundImage: `url('${item.image}')` }}
-                  />
-                  <div>
-                    <h3 className="text-lg font-bold leading-snug text-midnight">{item.title}</h3>
-                    <p className="mt-1 text-sm text-muted">{item.meta}</p>
-                  </div>
-                </article>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {whyItems.map((item) => (
+                <div
+                  key={item}
+                  className="flex items-start gap-3 rounded-xl bg-white/8 p-4 backdrop-blur-sm"
+                >
+                  <CheckIcon />
+                  <p className="text-sm font-semibold text-white">{item}</p>
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[var(--section-alt)] py-16">
+      {/* ── Partners ────────────────────────────────────────────── */}
+      <section className="bg-[var(--section-bg)] py-16">
         <div className="mx-auto max-w-[1520px] px-4 text-center sm:px-6">
-          <h2 className="text-4xl font-black text-midnight">{testimonials("title")}</h2>
-          <p className="mx-auto mt-3 max-w-3xl text-sm text-muted">{testimonials("subtitle")}</p>
+          <h2 className="text-3xl font-black text-midnight">{partners("title")}</h2>
+          <p className="mt-2 text-sm text-muted">{partners("subtitle")}</p>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+            {["Televes", "KNX", "LOXONE"].map((name) => (
+              <div
+                key={name}
+                className="flex h-16 w-36 items-center justify-center rounded-xl border border-border bg-[var(--surface)] px-4"
+              >
+                <span className="text-lg font-black text-midnight">{name}</span>
+              </div>
+            ))}
+            <div className="flex h-16 w-36 items-center justify-center rounded-xl border border-dashed border-border px-4">
+              <span className="text-sm font-semibold text-muted">{partners("more")}</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <div className="mt-10 grid gap-5 lg:grid-cols-2">
-            {donorCards.map((card) => (
-              <article key={card.name} className="rounded-sm bg-[var(--surface)] p-6 text-left">
-                <div className="mb-5 flex items-center gap-3">
-                  <div
-                    className="h-12 w-12 rounded-full bg-cover bg-center"
-                    style={{ backgroundImage: `url('${card.avatar}')` }}
-                  />
-                  <div>
-                    <p className="text-lg font-bold text-midnight">{card.name}</p>
-                    <p className="text-xs text-muted">{card.role}</p>
-                  </div>
+      {/* ── Projects ────────────────────────────────────────────── */}
+      <section id="projects" className="py-20">
+        <div className="mx-auto max-w-[1520px] px-4 sm:px-6">
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <h2 className="text-4xl font-black text-midnight">{projects("title")}</h2>
+              <p className="mt-2 text-sm text-muted">{projects("subtitle")}</p>
+            </div>
+            <Link
+              href="/projects"
+              className="hidden shrink-0 text-sm font-bold text-primary hover:text-secondary transition-colors sm:block"
+            >
+              {projects("viewAll")} →
+            </Link>
+          </div>
+
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {projectCards.map((card) => (
+              <article
+                key={card.title}
+                className="group overflow-hidden rounded-2xl border border-border bg-[var(--surface)] transition hover:shadow-panel"
+              >
+                <div
+                  className="h-44 bg-cover bg-center transition group-hover:scale-[1.02]"
+                  style={{ backgroundImage: `url('${card.image}')` }}
+                />
+                <div className="p-4">
+                  <span className="inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-semibold text-primary">
+                    {card.category}
+                  </span>
+                  <h3 className="mt-2 text-base font-bold leading-snug text-midnight">{card.title}</h3>
+                  <p className="mt-1.5 text-xs leading-relaxed text-muted">{card.desc}</p>
                 </div>
-                <p className="text-sm leading-relaxed text-dustGray">{card.quote}</p>
               </article>
             ))}
           </div>
 
-          <div className="mt-8 flex justify-center gap-2">
-            <span className="h-2.5 w-2.5 rounded-full bg-[rgba(29,200,205,0.45)]" />
-            <span className="h-2.5 w-2.5 rounded-full bg-[rgba(29,200,205,0.65)]" />
-            <span className="h-2.5 w-2.5 rounded-full bg-secondary" />
+          <div className="mt-8 text-center sm:hidden">
+            <Link
+              href="/projects"
+              className="inline-block rounded-lg bg-primary px-6 py-3 text-sm font-bold text-white"
+            >
+              {projects("viewAll")}
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="relative h-[260px] overflow-hidden">
+      {/* ── CTA banner ──────────────────────────────────────────── */}
+      <section className="relative overflow-hidden py-20">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=2200&q=80')"
+              "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2200&q=80')"
           }}
         />
-        <div className="absolute inset-0 bg-black/45" />
-        <div className="relative mx-auto flex h-full max-w-[1520px] items-center justify-center px-4 text-center sm:px-6">
-          <div>
-            <h2 className="text-4xl font-black text-white">{volunteer("title")}</h2>
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-white/90">
-              {volunteer("description")}
-            </p>
-            <a
-              href="#"
-              className="mt-7 inline-block rounded-md bg-[var(--color-error)] px-8 py-3 text-sm font-bold text-white transition hover:opacity-90"
-            >
-              {volunteer("button")}
-            </a>
-          </div>
+        <div className="absolute inset-0 bg-primary/85" />
+        <div className="relative mx-auto max-w-[1520px] px-4 text-center sm:px-6">
+          <h2 className="text-4xl font-black text-white">{cta("title")}</h2>
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/85">
+            {cta("description")}
+          </p>
+          <Link
+            href="/contact"
+            className="mt-8 inline-block rounded-lg bg-white px-8 py-3.5 text-sm font-bold text-primary shadow-lg transition hover:bg-secondary hover:text-white"
+          >
+            {cta("button")}
+          </Link>
         </div>
       </section>
-
-      <footer className="bg-[var(--surface)]">
-        <div className="mx-auto grid max-w-[1520px] gap-10 px-4 py-12 sm:px-6 lg:grid-cols-4">
-          <div>
-            <div className="flex items-center gap-3">
-              <LogoMark />
-              <div>
-                <p className="text-2xl font-black text-midnight">{header("orgName")}</p>
-                <p className="mt-1 text-[11px] font-semibold tracking-[0.18em] text-muted">
-                  {header("orgType")}
-                </p>
-              </div>
-            </div>
-            <p className="mt-4 text-sm leading-relaxed text-muted">{footer("about")}</p>
-          </div>
-
-          <div>
-            <p className="text-lg font-black text-midnight">{footer("officeTitle")}</p>
-            <p className="mt-3 text-sm leading-relaxed text-muted">{footer("address")}</p>
-            <p className="mt-3 text-sm font-semibold text-midnight">{header("phone")}</p>
-            <p className="mt-1 text-sm font-semibold text-midnight">{header("email")}</p>
-          </div>
-
-          <div>
-            <p className="text-lg font-black text-midnight">{footer("causesTitle")}</p>
-            <ul className="mt-3 space-y-2 text-sm text-muted">
-              <li>{footer("cause1")}</li>
-              <li>{footer("cause2")}</li>
-              <li>{footer("cause3")}</li>
-              <li>{footer("cause4")}</li>
-              <li>{footer("cause5")}</li>
-            </ul>
-          </div>
-
-          <div>
-            <p className="text-lg font-black text-midnight">{footer("linksTitle")}</p>
-            <ul className="mt-3 space-y-2 text-sm text-muted">
-              <li>{footer("link1")}</li>
-              <li>{footer("link2")}</li>
-              <li>{footer("link3")}</li>
-              <li>{footer("link4")}</li>
-              <li>{footer("link5")}</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-border">
-          <div className="mx-auto flex max-w-[1520px] flex-col items-center justify-between gap-3 px-4 py-5 text-sm text-muted sm:flex-row sm:px-6">
-            <p>{footer("copyright")}</p>
-            <div className="flex items-center gap-4 text-xs font-bold">
-              <a href="#">FB</a>
-              <a href="#">IG</a>
-              <a href="#">IN</a>
-              <a href="#">X</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      </div>
     </main>
   );
 }
